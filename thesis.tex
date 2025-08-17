@@ -1,0 +1,37 @@
+\documentclass[oneside,12pt]{thesis}
+\usepackage{macros}
+\usepackage{import}
+\usepackage{tikz}
+\renewcommand{\baselinestretch}{1.1}
+
+\begin{document}
+
+\maketitle
+\pagenumbering{roman}
+\makedeclarationpage
+\makecertificatepage
+\makeacknowledgementpage
+\tableofcontents
+\clearpage
+\pagenumbering{arabic}
+\pagestyle{fancy}
+
+\input{Chapter1-2}
+
+\part{Adding local time constraints to negotiations}
+\input{Chapter2-2}
+\input{Chapter3-2}
+
+\part{Decidable subclasses for reachability in LTNs}
+\input{Chapter4-2}
+\input{Chapter5-2}
+\input{Chapter6-2}
+\input{Chapter7-2}
+\input{Chapter8-2}
+
+\appendix
+
+\bibliography{references}
+\bibliographystyle{alpha}
+
+\end{document}
