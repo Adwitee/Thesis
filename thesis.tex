@@ -1,7 +1,14 @@
 \documentclass[oneside,12pt]{thesis}
 \usepackage{macros}
 \usepackage{import}
+\usepackage{comment}
+\usepackage{caption}
+\usepackage{booktabs}
+\usepackage{subcaption}
 \usepackage{tikz}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usetikzlibrary{arrows.meta,positioning,calc,fit}
 \renewcommand{\baselinestretch}{1.1}
 
 \begin{document}
@@ -16,18 +23,23 @@
 \pagenumbering{arabic}
 \pagestyle{fancy}
 
-\input{Chapter1-2}
+\input{Chapter1-draft1}
 
 \part{Adding local time constraints to negotiations}
-\input{Chapter2-2}
-\input{Chapter3-2}
+\input{Chapter2-draft1}
+\input{Chapter3-draft1}
 
 \part{Decidable subclasses for reachability in LTNs}
-\input{Chapter4-2}
-\input{Chapter5-2}
-\input{Chapter6-2}
-\input{Chapter7-2}
-\input{Chapter8-2}
+
+Part~I established local-timed negotiations as a model for concurrent real-time systems and showed that this expressiveness comes at a fundamental cost: location reachability is undecidable in the presence of unrestricted local-time drift combined with selective synchronization (Chapter~\ref{chap:ltn}). The undecidability proof isolated two sources of algorithmic hardness—unbounded divergence of reference clocks and the ability to compare accumulated drift via synchronizing nodes.
+
+In this part, we turn to the complementary question: under which restrictions can reachability be recovered as a decidable problem, without collapsing the model back to global time or eliminating concurrency altogether? We study several fragments of local-timed negotiations obtained by constraining synchronization patterns, temporal drift, or communication structure, and develop tailored proof techniques for each. Chapter~\ref{chap:fragments} begins this investigation by analyzing the two extreme synchronization regimes, which serve as conceptual and technical anchor points for the decidable landscape explored in the chapters that follow.
+
+%\input{Chapter4-draft2}
+%\input{Chapter6-draft2}
+%\input{Chapter7-draft3}
+%\input{Chapter8-draft1}
+%\input{Chapter8-c}
 
 \appendix
 
