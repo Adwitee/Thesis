@@ -1,0 +1,123 @@
+\chapter{Conclusion and Future Directions}
+\label{chap:conclusion}
+
+\section{Conclusion}
+
+Concurrent systems with quantitative timing constraints are pervasive in practice—from distributed protocols and embedded systems to cyber-physical infrastructures—yet modeling them presents fundamental tensions between expressiveness, compositionality, and decidability. This thesis introduced \emph{local-timed negotiations (LTNs)} as a unifying formalism that addresses these tensions by combining two complementary perspectives: the interaction-centric view of negotiations, which makes concurrency and causal structure explicit, and the quantitative timing framework of timed automata, which enables precise reasoning about real-time behavior.
+
+The key innovation of LTNs lies in assigning clocks and timing constraints \emph{locally} to agents and interactions rather than globally. This locality principle captures timing phenomena—such as bounded desynchronization, partial observation of delays, and interaction-dependent progress—that are difficult to express cleanly in either negotiations or timed automata alone. At the same time, unrestricted locality leads quickly to undecidability, subsuming the power of networks of timed automata. The central question motivating this thesis is therefore: \emph{which natural restrictions on timing, synchronization, and structure suffice to recover decidability while preserving expressive power?}
+
+\subsection*{Contributions and Main Results}
+
+The thesis answers this question through a systematic exploration of the decidability landscape for LTNs, organized along three axes: synchronization patterns, clock divergence, and structural constraints.
+
+\paragraph{Foundations.} After establishing the formal semantics of LTNs in Chapter~\ref{chap:ltn-definitions}, with careful attention to local clocks, joint occurrences, and monotonicity, the thesis positions LTNs as a strict generalization of untimed negotiations and a structured alternative to product constructions over timed automata. This foundation clarifies how timing information propagates through interactions and provides the technical basis for subsequent decidability results.
+
+\paragraph{Extreme synchronization regimes.} Chapter~\ref{chap:sync-fragments} analyzes two opposite ends of the synchronization spectrum. In the \emph{synchronization-free} fragment, where timing constraints decouple across agents, a finite abstraction via product-region construction yields \PSPACE-completeness. At the other extreme, the \emph{always-synchronizing} fragment tightly couples agents through every interaction, yet every reachable configuration admits a monotone witness run, enabling a reduction to timed automata reachability—also \PSPACE-complete. These results establish baseline complexity bounds and demonstrate that both maximal independence and maximal dependence can be decidable when properly formalized.
+
+\paragraph{Bounded desynchronization.} Between these extremes lies the conceptually rich territory of \emph{partial synchronization}. Chapter~\ref{chap:drift-bounded} introduces \emph{drift-bounded LTNs}, where local clocks may diverge but only within a bounded range. By adopting an existential notion of drift boundedness—requiring only that \emph{some} execution witnesses the target configuration with bounded drift—the thesis shows that decidability can be restored without requiring global synchronization. Crucially, acyclic LTNs are proven drift-bounded, with reachability shown to be \NP-complete (Theorem~\ref{thm:acyclic-np}). This result highlights \emph{bounded desynchronization} as a key semantic principle underlying decidability in timed interaction models.
+
+\paragraph{Structural coherence.} Finally, Chapter~\ref{chap:connected-communication} explores structural restrictions that enforce global coherence without full synchronization. The notion of \emph{connectedly communicating LTNs} demonstrates how interaction topology can be exploited to refine decidability boundaries, complementing the semantic restrictions on drift and synchronization.
+
+\subsection*{Conceptual Framework}
+
+Beyond individual complexity results, this thesis contributes a conceptual framework for understanding the interplay between timing, synchronization, and structure in concurrent systems. Three recurring themes emerge:
+
+\begin{enumerate}
+\item \textbf{Locality vs.\ globality:} Decidability often hinges on whether timing information remains local or must be globally coordinated. The synchronization-free and drift-bounded fragments exploit locality, while the always-synchronizing fragment manages global coordination through tight coupling.
+
+\item \textbf{Semantic vs.\ syntactic restrictions:} Existential drift boundedness is a semantic property (depending on reachable behaviors), yet it can be verified syntactically for acyclic structures. This interplay between semantic guarantees and syntactic sufficient conditions recurs throughout the thesis.
+
+\item \textbf{Monotonicity and normal forms:} Many decidability proofs rely on constructing canonical witnesses—monotone runs, truncated configurations, or region-normalized executions—that preserve reachability while admitting finite representation. These proof techniques suggest deeper connections to well-quasi-orderings and well-structured systems.
+\end{enumerate}
+
+Taken together, the results delineate a rich landscape of timed interaction models and demonstrate that undecidability can be avoided through principled restrictions on how agents coordinate their timing behavior.
+
+\section{Broader Directions and Outlook}
+\label{sec:future-directions}
+
+The framework of local-timed negotiations opens a broader research program centered on \emph{quantitative verification under structural constraints}. The decidable fragments and proof techniques developed in this thesis suggest multiple directions for extending both the theoretical foundations and practical applicability of LTNs. Below, we outline core continuations of this work, organized by increasing scope and ambition.
+
+\subsection{Counting and Enumeration Problems}
+
+The finite abstractions and normal-form constructions developed for decidable LTN fragments suggest natural extensions to \emph{counting problems}. Rather than asking whether a configuration is reachable, one can ask: \emph{how many} distinct executions reach it? Or: how many reachable configurations satisfy a given property?
+
+For synchronization-free LTNs, the product-region construction of Chapter~\ref{chap:sync-fragments} provides a finite graph whose paths correspond to executions. This immediately yields decidability of counting reachable configurations. However, the complexity of \emph{exact counting} or \emph{approximate counting} remains open. Similarly, for always-synchronizing LTNs, the monotone witness runs established in Theorem~\ref{thm:always-sync-pspace} admit a finite representation, but whether this enables efficient counting is unclear.
+
+A particularly compelling question concerns acyclic and drift-bounded LTNs (Chapter~\ref{chap:drift-bounded}). Since reachability is \NP-complete (Theorem~\ref{thm:acyclic-np}), natural follow-up questions include:
+\begin{itemize}
+\item Can reachable configurations be enumerated with polynomial delay?
+\item Does counting reachable configurations remain in \#P, or does drift boundedness enable more efficient algorithms?
+\item Can standard approximation techniques (e.g., FPRAS) be adapted to count executions up to clock-region equivalence?
+\end{itemize}
+
+Answering these questions would connect LTNs to the growing literature on counting and enumeration in verification and would clarify whether the semantic restrictions ensuring decidability also yield computational tractability for quantitative queries.
+
+\subsection{Quantitative Extensions: Costs, Weights, and Counters}
+
+Chapter~\ref{chap:ltn-definitions} deliberately restricts LTNs to clock constraints without accumulated quantitative effects such as costs or counters. A natural next step is to incorporate such features, enabling the study of resource-aware verification and optimization problems.
+
+The drift-boundedness results of Chapter~\ref{chap:drift-bounded} are particularly suggestive here. Since decidability relies on bounding clock \emph{divergence} rather than absolute time, it is plausible that additive cost models or bounded counters could be incorporated without destroying decidability. Concretely:
+\begin{itemize}
+\item \textbf{Cost-annotated LTNs:} Associate integer costs with interactions and ask whether a target configuration is reachable with total cost below a threshold. Does existential drift boundedness suffice for decidability of cost-bounded reachability?
+\item \textbf{Optimal reachability:} For always-synchronizing LTNs, can cost-optimal executions be found via reduction to priced timed automata?
+\item \textbf{Counter extensions:} Allow agents to maintain integer counters (e.g., modeling resource counts) that are incremented or decremented during interactions. Do acyclic counter-LTNs preserve \NP-completeness, or does interaction with drift boundedness lead to undecidability?
+\end{itemize}
+
+These extensions would position LTNs as a framework for studying quantitative objectives in concurrent systems, bridging the gap between qualitative reachability analysis and optimization.
+
+\subsection{Structural Parameters and Well-Structuredness}
+
+Several results in this thesis point toward the importance of structure: acyclicity (Definition~\ref{def:acyclic-ltn}) and connected communication (Chapter~\ref{chap:connected-communication}) both impose global coherence without requiring full synchronization. However, these restrictions were introduced somewhat \emph{ad hoc}, motivated by specific decidability proofs rather than a systematic theory.
+
+A more principled approach would be to study \emph{parametric structural restrictions} on LTNs and characterize their impact on decidability and complexity. Promising parameters include:
+\begin{itemize}
+\item \textbf{Interaction hypergraph structure:} Does bounding the treewidth, pathwidth, or treedepth of the negotiation hypergraph yield new decidable fragments or improved complexity bounds?
+\item \textbf{Negotiation arity:} All results in this thesis apply to arbitrarily large interactions. Does restricting to binary or bounded-arity interactions simplify analysis or admit efficient algorithms?
+\item \textbf{Hierarchical patterns:} Can layered or modular interaction structures—common in protocol design—be exploited for compositional verification?
+\end{itemize}
+
+More ambitiously, the monotonicity and truncation techniques used in Lemmas~\ref{lem:monotone-witness} and~\ref{lem:bounded-truncation} suggest connections to \emph{well-quasi-orderings} (WQOs) and well-structured transition systems (WSTS). An open problem is whether abstract LTN configurations can be equipped with a WQO that respects reachability, thereby importing the powerful termination and coverability results from the WSTS literature. Such a connection would situate LTNs within a broader theoretical framework and could yield generic decidability results for rich classes of timed interaction systems.
+
+\subsection{Beyond Reachability: Broader Verification and Synthesis}
+
+While reachability captures the core decidability challenges in LTNs, many verification problems remain unexplored:
+\begin{itemize}
+\item \textbf{Safety and liveness:} Can invariants or bounded-response properties be verified using the region-based abstractions from Chapter~\ref{chap:sync-fragments}?
+\item \textbf{Quantitative specifications:} Can metric temporal logic or timed logics be model-checked over decidable LTN fragments?
+\item \textbf{Parametric verification:} Given a family of LTNs parameterized by timing constants, can one synthesize constraints ensuring reachability or drift boundedness?
+\end{itemize}
+
+The explicit interaction structure of LTNs also suggests new \emph{synthesis} questions. For instance: given a partial specification of interactions and timing constraints, can one automatically complete it to ensure drift boundedness or enforce timely synchronization? Such problems extend the reachability analysis toward controller synthesis, where the goal is to construct strategies that guarantee desired timing properties in the presence of environmental uncertainty or adversarial agents.
+
+\subsection{Connections to Other Infinite-State Models}
+
+The expressiveness results implicit throughout this thesis—particularly the undecidability proofs that motivate restrictions—call for a deeper comparison between LTNs and other infinite-state concurrency models. While Chapter~\ref{chap:ltn-definitions} positions LTNs as a synthesis of negotiations and timed automata, precise translations to related models remain open:
+\begin{itemize}
+\item \textbf{Timed Petri nets:} How do LTNs compare to time Petri nets or timed-arc Petri nets in expressiveness? Can drift boundedness be related to boundedness in Petri nets?
+\item \textbf{Communicating timed automata:} Networks of timed automata with message passing are known to be undecidable. Can the restrictions ensuring decidability in LTNs be translated to communication protocols, and vice versa?
+\item \textbf{Negotiation-VASS:} Untimed negotiations with counters have been studied recently. Can the techniques from LTNs inform decidability boundaries when both timing and counting are present?
+\end{itemize}
+
+Understanding these connections would clarify the relative power of LTNs and reveal whether principles like drift boundedness and structural coherence apply broadly across infinite-state models.
+
+\subsection{Toward Practical Modeling and Tool Support}
+
+Finally, LTNs suggest a modeling paradigm closely aligned with how distributed protocols are described in practice: via explicit interactions and local timing constraints rather than monolithic global states. This raises the question of whether LTNs can serve as a practical specification language.
+
+A concrete direction is to develop \emph{prototype tool support} for LTNs, targeting the decidable fragments identified in this thesis:
+\begin{itemize}
+\item Implement verification algorithms for acyclic and drift-bounded LTNs (Chapter~\ref{chap:drift-bounded}).
+\item Build abstraction-based model checkers for synchronization-free and always-synchronizing fragments (Chapter~\ref{chap:sync-fragments}).
+\item Explore heuristic or approximate methods for more general LTNs, using drift boundedness as a runtime check.
+\end{itemize}
+
+Such tools would enable empirical evaluation on case studies drawn from distributed protocols, embedded systems, or cyber-physical applications. They could also guide the discovery of additional restrictions motivated by real-world modeling needs, creating a feedback loop between theory and practice.
+
+\section*{Closing Remark}
+
+Local-timed negotiations were introduced in this thesis not as an isolated formalism, but as a lens through which concurrency and time can be studied together at the level of \emph{interaction}. The decidability landscape charted here reveals that this lens is productive: it exposes new decidable classes, clarifies fundamental boundaries, and illuminates the subtle interplay between local autonomy and global coordination in real-time concurrent systems.
+
+Yet this thesis represents only a beginning. The future directions outlined above—spanning counting, costs, structure, synthesis, and tool support—collectively point toward a broader research program on \emph{quantitative and structural verification of interaction systems}. Such a program naturally aligns with current trends in formal methods, from parametric verification and well-structured systems to quantitative synthesis and resource-aware logics. It offers multiple entry points for both theoretical advances—connecting LTNs to established frameworks like WSTS or extending them with richer quantitative features—and practical applications in protocol analysis and embedded system design.
+
+It is my hope that local-timed negotiations will serve not only as a theoretical contribution to the foundations of timed concurrency, but also as a generative framework—one that inspires new questions, enables new techniques, and ultimately deepens our understanding of how time, interaction, and structure shape the behavior of concurrent systems.
