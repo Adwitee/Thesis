@@ -9,6 +9,16 @@
 \usepackage{graphicx}
 \usepackage{hyperref}
 \usetikzlibrary{arrows.meta,positioning,calc,fit}
+\usepackage{blindtext}
+\usepackage{tcolorbox}
+\usepackage{xcolor}
+\definecolor{Honeydew1}{RGB}{240, 255, 240}
+\definecolor{Honeydew3}{RGB}{193, 205, 193}
+\definecolor{AntiqueWhite1}{RGB}{255, 239, 219}
+\definecolor{AntiqueWhite3}{RGB}{205, 192, 176}
+\definecolor{LightSteelBlue1}{RGB}{202, 225, 255}
+\definecolor{LightGrey1}{RGB}{230, 230, 230}
+\definecolor{LightGrey3}{RGB}{190, 190, 190}
 \renewcommand{\baselinestretch}{1.1}
 
 \begin{document}
@@ -23,11 +33,12 @@
 \pagenumbering{arabic}
 \pagestyle{fancy}
 
-\input{Chapter1-draft1}
+\input{ch1}
 
 \part{Adding local time constraints to negotiations}
-\input{Chapter2-draft1}
-\input{Chapter3-draft1}
+
+\input{ch2}
+\input{ch3}
 
 \part{Decidable subclasses for reachability in LTNs}
 
@@ -35,11 +46,11 @@ Part~I established local-timed negotiations as a model for concurrent real-time 
 
 In this part, we turn to the complementary question: under which restrictions can reachability be recovered as a decidable problem, without collapsing the model back to global time or eliminating concurrency altogether? We study several fragments of local-timed negotiations obtained by constraining synchronization patterns, temporal drift, or communication structure, and develop tailored proof techniques for each. Chapter~\ref{chap:fragments} begins this investigation by analyzing the two extreme synchronization regimes, which serve as conceptual and technical anchor points for the decidable landscape explored in the chapters that follow.
 
-%\input{Chapter4-draft2}
-%\input{Chapter6-draft2}
-%\input{Chapter7-draft3}
+\input{Chapter4-draft2}
+\input{Chapter6-draft2}
+\input{Chapter7-draft4}
 %\input{Chapter8-draft1}
-%\input{Chapter8-c}
+\input{Chapter8-c}
 
 \appendix
 
