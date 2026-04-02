@@ -1,0 +1,832 @@
+\relax 
+\providecommand\hyper@newdestlabel[2]{}
+\providecommand\HyperFirstAtBeginDocument{\AtBeginDocument}
+\HyperFirstAtBeginDocument{\ifx\hyper@anchor\@undefined
+\global\let\oldcontentsline\contentsline
+\gdef\contentsline#1#2#3#4{\oldcontentsline{#1}{#2}{#3}}
+\global\let\oldnewlabel\newlabel
+\gdef\newlabel#1#2{\newlabelxx{#1}#2}
+\gdef\newlabelxx#1#2#3#4#5#6{\oldnewlabel{#1}{{#2}{#3}}}
+\AtEndDocument{\ifx\hyper@anchor\@undefined
+\let\contentsline\oldcontentsline
+\let\newlabel\oldnewlabel
+\fi}
+\fi}
+\global\let\hyper@last\relax 
+\gdef\HyperFirstAtBeginDocument#1{#1}
+\providecommand\HyField@AuxAddToFields[1]{}
+\providecommand\HyField@AuxAddToCoFields[2]{}
+\providecommand \oddpage@label [2]{}
+\citation{DBLP:conf/fossacs/AkshayGHM20}
+\@writefile{toc}{\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.2}\protected@file@percent }
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\@writefile{loa}{\addvspace {10\p@ }}
+\newlabel{chap:intro}{{1}{1}{Introduction}{chapter.2}{}}
+\newlabel{chap:intro@cref}{{[chapter][1][]1}{[1][1][]1}}
+\@writefile{toc}{\contentsline {section}{\numberline {1.1}Motivation}{2}{section.3}\protected@file@percent }
+\newlabel{sec:intro-motivation}{{1.1}{2}{Motivation}{section.3}{}}
+\newlabel{sec:intro-motivation@cref}{{[section][1][1]1.1}{[1][2][]2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.1.1}Concurrency, time, and coordinated interaction}{2}{subsection.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.1.2}Why explicit multiparty interaction matters}{3}{subsection.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.1.3}Verification and the reachability problem}{4}{subsection.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.1.4}Why local time changes the question}{5}{subsection.7}\protected@file@percent }
+\citation{AlurDillTA}
+\citation{AlurDillTA}
+\citation{DillPhD}
+\@writefile{toc}{\contentsline {section}{\numberline {1.2}From timed automata and negotiations to local-timed negotiations}{6}{section.8}\protected@file@percent }
+\newlabel{sec:intro-positioning}{{1.2}{6}{From timed automata and negotiations to local-timed negotiations}{section.8}{}}
+\newlabel{sec:intro-positioning@cref}{{[section][2][1]1.2}{[1][5][]6}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.2.1}Timed automata and the global-time paradigm}{6}{subsection.9}\protected@file@percent }
+\citation{EsparzaDeselNegotiations}
+\citation{EsparzaWorkflow}
+\citation{EsparzaFreeChoice}
+\@writefile{lof}{\contentsline {figure}{\numberline {1.1}{\ignorespaces A timed automaton \(\mathcal  {A}_1\). Both clocks \(x\) and \(y\) start at \(0\) in state \(q_0\). The transition on \(a\) from \(q_0\) to \(q_1\) has the guard \(x \leq 2\), forcing the system to spend at most \(2\) time units before taking it. The transition on \(a\) from \(q_1\) to \(q_0\) has no guard and resets \(x\). The guard on \(b\) from \(q_1\) to \(q_2\) requires that at least \(10\) time units have elapsed since the start, via the constraint \(y \geq 10\).\relax }}{7}{figure.caption.10}\protected@file@percent }
+\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
+\newlabel{fig:ab}{{1.1}{7}{A timed automaton \(\mathcal {A}_1\). Both clocks \(x\) and \(y\) start at \(0\) in state \(q_0\). The transition on \(a\) from \(q_0\) to \(q_1\) has the guard \(x \leq 2\), forcing the system to spend at most \(2\) time units before taking it. The transition on \(a\) from \(q_1\) to \(q_0\) has no guard and resets \(x\). The guard on \(b\) from \(q_1\) to \(q_2\) requires that at least \(10\) time units have elapsed since the start, via the constraint \(y \geq 10\).\relax }{figure.caption.10}{}}
+\newlabel{fig:ab@cref}{{[figure][1][1]1.1}{[1][6][]7}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.2.2}Negotiations and explicit multiparty synchronization}{7}{subsection.12}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {1.2}{\ignorespaces Part of the transition system of the timed automaton \(\mathcal  {A}_1\), showing several possible runs.\relax }}{8}{figure.caption.11}\protected@file@percent }
+\newlabel{fig:ab-behavior}{{1.2}{8}{Part of the transition system of the timed automaton \(\mathcal {A}_1\), showing several possible runs.\relax }{figure.caption.11}{}}
+\newlabel{fig:ab-behavior@cref}{{[figure][2][1]1.2}{[1][6][]8}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1.3}{\ignorespaces A simple node $n$ with three processes $\{p_1, p_2, p_3\}$ in its domain, and the set of outcomes is $\{r\}$\relax }}{8}{figure.caption.14}\protected@file@percent }
+\newlabel{fig:node}{{1.3}{8}{A simple node $n$ with three processes $\{p_1, p_2, p_3\}$ in its domain, and the set of outcomes is $\{r\}$\relax }{figure.caption.14}{}}
+\newlabel{fig:node@cref}{{[figure][3][1]1.3}{[1][8][]8}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.2.3}A running example: an ATM workflow}{8}{subsection.13}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {1.4}{\ignorespaces A distributed negotiations modelling a transaction between a customer, an ATM and a bank\relax }}{9}{figure.caption.16}\protected@file@percent }
+\newlabel{fig:ATM}{{1.4}{9}{A distributed negotiations modelling a transaction between a customer, an ATM and a bank\relax }{figure.caption.16}{}}
+\newlabel{fig:ATM@cref}{{[figure][4][1]1.4}{[1][9][]9}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {1.2.3.1}A simple example: ATM workflow}{9}{subsubsection.15}\protected@file@percent }
+\newlabel{example:ATM-untimed}{{1.2.3.1}{9}{A simple example: ATM workflow}{subsubsection.15}{}}
+\newlabel{example:ATM-untimed@cref}{{[subsubsection][1][1,2,3]1.2.3.1}{[1][8][]9}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.2.4}Why combining the two models is not routine}{10}{subsection.17}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.2.5}A compact comparison of the three viewpoints}{10}{subsection.18}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {1.3}Local-timed negotiations at a glance}{11}{section.19}\protected@file@percent }
+\newlabel{sec:intro-ltns}{{1.3}{11}{Local-timed negotiations at a glance}{section.19}{}}
+\newlabel{sec:intro-ltns@cref}{{[section][3][1]1.3}{[1][11][]11}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.3.1}Local reference time and local clocks}{11}{subsection.20}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.3.2}Time-synchronizing and non-synchronizing interactions}{11}{subsection.21}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.3.3}A timed reading of the ATM example}{12}{subsection.24}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.3.4}Why local time is attractive}{12}{subsection.26}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Explicit independence.}{12}{subsection.26}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {1.5}{\ignorespaces ATM transaction as a local-timed negotiation. Customer $c$ has local clock $x$ (reset at $\mathsf  {req}$, checked at $\mathsf  {e\_otp}$ and $\mathsf  {g\_up}$). Bank $b$ has local clock $y$ (reset at $\mathsf  {s\_otp}$, checked at $\mathsf  {match}$ and $\mathsf  {fail}$). Annotations like "$x \leq 10$" are guards; "$\{x\}$" indicates clock reset.\relax }}{13}{figure.caption.25}\protected@file@percent }
+\newlabel{fig:ATM}{{1.5}{13}{ATM transaction as a local-timed negotiation. Customer $c$ has local clock $x$ (reset at $\mathsf {req}$, checked at $\mathsf {e\_otp}$ and $\mathsf {g\_up}$). Bank $b$ has local clock $y$ (reset at $\mathsf {s\_otp}$, checked at $\mathsf {match}$ and $\mathsf {fail}$). Annotations like "$x \leq 10$" are guards; "$\{x\}$" indicates clock reset.\relax }{figure.caption.25}{}}
+\newlabel{fig:ATM@cref}{{[figure][5][1]1.5}{[1][12][]13}}
+\@writefile{toc}{\contentsline {paragraph}{Closer to distributed intuition.}{13}{subsection.26}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Selective coordination.}{13}{subsection.26}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Potential for partial-order reasoning.}{13}{subsection.26}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.3.5}Why local time is difficult}{13}{subsection.27}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {1.4}Contributions and main results}{14}{section.28}\protected@file@percent }
+\newlabel{sec:intro-contrib}{{1.4}{14}{Contributions and main results}{section.28}{}}
+\newlabel{sec:intro-contrib@cref}{{[section][4][1]1.4}{[1][14][]14}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.4.1}The central negative result}{14}{subsection.29}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.4.2}Decidable extremes of the synchronization spectrum}{14}{subsection.33}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Synchronization-free LTNs.}{15}{subsection.33}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Always-synchronizing LTNs.}{15}{subsection.33}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.4.3}Decidability via bounded drift}{15}{subsection.34}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.4.4}Decidability via communication structure}{15}{subsection.35}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.4.5}A summary of the landscape}{16}{subsection.36}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.4.6}What is conceptually new in the thesis}{16}{subsection.37}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {1.5}Organization of the thesis}{17}{section.41}\protected@file@percent }
+\newlabel{sec:intro-organization}{{1.5}{17}{Organization of the thesis}{section.41}{}}
+\newlabel{sec:intro-organization@cref}{{[section][5][1]1.5}{[1][17][]17}}
+\@writefile{toc}{\contentsline {paragraph}{Part\nobreakspace  {}I: introducing the model and establishing the negative boundary.}{17}{section.41}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Part\nobreakspace  {}II: decidable subclasses.}{17}{section.41}\protected@file@percent }
+\citation{AlurDillTA}
+\citation{DillPhD}
+\citation{LocalTimeTA}
+\citation{LocalZone1}
+\citation{LocalZone2}
+\citation{LocalBuchi}
+\citation{MerlinTimePN}
+\citation{HansenTimedArc}
+\citation{AlurMSC}
+\@writefile{toc}{\contentsline {paragraph}{Conclusion and outlook.}{18}{section.41}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{How to read the thesis.}{18}{section.41}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {1.6}Related work}{18}{section.42}\protected@file@percent }
+\newlabel{sec:intro-related}{{1.6}{18}{Related work}{section.42}{}}
+\newlabel{sec:intro-related@cref}{{[section][6][1]1.6}{[1][18][]18}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.6.1}Timed automata and local-time semantics}{18}{subsection.43}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.6.2}Timed concurrency models beyond timed automata}{18}{subsection.44}\protected@file@percent }
+\citation{EsparzaUnfoldings}
+\citation{KhomenkoTimePN}
+\citation{EsparzaDeselNegotiations}
+\citation{EsparzaWorkflow}
+\citation{EsparzaFreeChoice}
+\citation{LTNOriginal}
+\citation{DriftTA1}
+\citation{DriftTA2}
+\citation{HenriksenMSG}
+\citation{PnueliRosner}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.6.3}Negotiations and workflow-style concurrency}{19}{subsection.45}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.6.4}Drift-boundedness and structural restrictions}{19}{subsection.46}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.6.5}Position of the thesis}{20}{subsection.47}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {1.7}What to carry forward}{20}{section.51}\protected@file@percent }
+\newlabel{sec:intro-takeaway}{{1.7}{20}{What to carry forward}{section.51}{}}
+\newlabel{sec:intro-takeaway@cref}{{[section][7][1]1.7}{[1][20][]20}}
+\@writefile{toc}{\contentsline {section}{\numberline {1.8}Coming next}{20}{section.56}\protected@file@percent }
+\newlabel{sec:intro-next}{{1.8}{20}{Coming next}{section.56}{}}
+\newlabel{sec:intro-next@cref}{{[section][8][1]1.8}{[1][20][]20}}
+\@writefile{toc}{\contentsline {part}{I\hspace  {1em}Adding local time constraints to negotiations}{21}{part.57}\protected@file@percent }
+\@writefile{toc}{\contentsline {chapter}{\numberline {2}Preliminaries}{22}{chapter.58}\protected@file@percent }
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\@writefile{loa}{\addvspace {10\p@ }}
+\newlabel{chap:preliminaries}{{2}{22}{Preliminaries}{chapter.58}{}}
+\newlabel{chap:preliminaries@cref}{{[chapter][2][]2}{[1][22][]22}}
+\@writefile{toc}{\contentsline {paragraph}{Organization.}{22}{chapter.58}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {2.1}Negotiations}{22}{section.59}\protected@file@percent }
+\newlabel{sec:prelim-negotiations}{{2.1}{22}{Negotiations}{section.59}{}}
+\newlabel{sec:prelim-negotiations@cref}{{[section][1][2]2.1}{[1][22][]22}}
+\citation{EsparzaDeselNegotiations}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1.1}Syntax and operational semantics}{23}{subsection.60}\protected@file@percent }
+\newlabel{subsec:prelim-neg-syntax}{{2.1.1}{23}{Syntax and operational semantics}{subsection.60}{}}
+\newlabel{subsec:prelim-neg-syntax@cref}{{[subsection][1][2,1]2.1.1}{[1][23][]23}}
+\@writefile{loe}{\addvspace {10\p@ }}
+\@writefile{loe}{\contentsline {definition}{\numberline {2.1}Definition\thmtformatoptarg {Negotiation}}{23}{definition.62}\protected@file@percent }
+\newlabel{def:prelim-negotiation}{{2.1}{23}{Negotiation}{definition.62}{}}
+\newlabel{def:prelim-negotiation@cref}{{[definition][1][]2.1}{[1][23][]23}}
+\@writefile{loe}{\contentsline {definition}{\numberline {2.2}Definition\thmtformatoptarg {Marking}}{24}{definition.64}\protected@file@percent }
+\@writefile{loe}{\contentsline {definition}{\numberline {2.3}Definition\thmtformatoptarg {Enabled node and occurrence}}{24}{definition.66}\protected@file@percent }
+\@writefile{loe}{\contentsline {definition}{\numberline {2.4}Definition\thmtformatoptarg {Run, deadlock, livelock}}{24}{definition.68}\protected@file@percent }
+\@writefile{loe}{\contentsline {definition}{\numberline {2.5}Definition\thmtformatoptarg {Reachability graph}}{24}{definition.70}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1.2}Graphical conventions}{25}{subsection.71}\protected@file@percent }
+\newlabel{subsec:prelim-neg-graphics}{{2.1.2}{25}{Graphical conventions}{subsection.71}{}}
+\newlabel{subsec:prelim-neg-graphics@cref}{{[subsection][2][2,1]2.1.2}{[1][25][]25}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1.3}A running example: ATM PIN reset}{25}{subsection.72}\protected@file@percent }
+\newlabel{subsec:prelim-neg-atm}{{2.1.3}{25}{A running example: ATM PIN reset}{subsection.72}{}}
+\newlabel{subsec:prelim-neg-atm@cref}{{[subsection][3][2,1]2.1.3}{[1][25][]25}}
+\@writefile{toc}{\contentsline {paragraph}{Scenario.}{25}{subsection.72}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{A fully explicit instance of Definition\nobreakspace  {}\ref  {def:prelim-negotiation}.}{26}{Item.79}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{How the control flow works.}{27}{Item.79}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Why this example matters later.}{27}{Item.79}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1.4}A richer example: pollination and climate mismatch}{27}{subsection.81}\protected@file@percent }
+\newlabel{subsec:prelim-neg-pollination}{{2.1.4}{27}{A richer example: pollination and climate mismatch}{subsection.81}{}}
+\newlabel{subsec:prelim-neg-pollination@cref}{{[subsection][4][2,1]2.1.4}{[1][27][]27}}
+\@writefile{toc}{\contentsline {paragraph}{Informal reading.}{27}{subsection.81}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {2.1}{\ignorespaces ATM transaction negotiation. Customer ($c$), ATM ($a$), and bank ($b$) coordinate through atomic interactions. Note the hyperarc at $n_4$ for customer $c$ after $\mathsf  {e\_otp}$: non-deterministic control flow allows readiness at both $n_4$ (retry) and $n_6$ (completion).\relax }}{28}{figure.caption.80}\protected@file@percent }
+\newlabel{fig:ATM}{{2.1}{28}{ATM transaction negotiation. Customer ($c$), ATM ($a$), and bank ($b$) coordinate through atomic interactions. Note the hyperarc at $n_4$ for customer $c$ after $\mathsf {e\_otp}$: non-deterministic control flow allows readiness at both $n_4$ (retry) and $n_6$ (completion).\relax }{figure.caption.80}{}}
+\newlabel{fig:ATM@cref}{{[figure][1][2]2.1}{[1][27][]28}}
+\@writefile{toc}{\contentsline {paragraph}{Key observations from this example.}{28}{subsection.81}\protected@file@percent }
+\citation{EsparzaDeselNegotiations}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.2}{\ignorespaces A stylized negotiation inspired by flowering and pollinator emergence. The example is used structurally, not biologically: it illustrates hyperarcs, branching, delayed consequences of choice, and cyclic control flow.\relax }}{29}{figure.caption.89}\protected@file@percent }
+\newlabel{fig:prelim-pollination}{{2.2}{29}{A stylized negotiation inspired by flowering and pollinator emergence. The example is used structurally, not biologically: it illustrates hyperarcs, branching, delayed consequences of choice, and cyclic control flow.\relax }{figure.caption.89}{}}
+\newlabel{fig:prelim-pollination@cref}{{[figure][2][2]2.2}{[1][29][]29}}
+\citation{EsparzaDeselNegotiations}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.3}{\ignorespaces A possible run of the negotiation in Figure\nobreakspace  {}\ref  {fig:pollination}. Tokens represent the current readiness of each process. Gray nodes denote enabled nodes. The run illustrates how choices at \(n_1\), \(n_2\), and \(n_3\) propagate to subsequent flowering and synchronization behaviour.\relax }}{30}{figure.caption.90}\protected@file@percent }
+\newlabel{fig:run}{{2.3}{30}{A possible run of the negotiation in Figure~\ref {fig:pollination}. Tokens represent the current readiness of each process. Gray nodes denote enabled nodes. The run illustrates how choices at \(n_1\), \(n_2\), and \(n_3\) propagate to subsequent flowering and synchronization behaviour.\relax }{figure.caption.90}{}}
+\newlabel{fig:run@cref}{{[figure][3][2]2.3}{[1][30][]30}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1.5}Relation to Standard Negotiations with Transformers}{30}{subsection.91}\protected@file@percent }
+\newlabel{sec:standard-def}{{2.1.5}{30}{Relation to Standard Negotiations with Transformers}{subsection.91}{}}
+\newlabel{sec:standard-def@cref}{{[subsection][5][2,1]2.1.5}{[1][30][]30}}
+\citation{EsparzaDeselNegotiations}
+\citation{EsparzaWorkflow}
+\citation{EsparzaFreeChoice}
+\@writefile{toc}{\contentsline {paragraph}{Standard definition (informal).}{31}{subsection.91}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Why the simplification suffices.}{31}{subsection.91}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Equivalence.}{31}{subsection.91}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1.6}Reachability and known complexity}{31}{subsection.92}\protected@file@percent }
+\newlabel{subsec:prelim-neg-complexity}{{2.1.6}{31}{Reachability and known complexity}{subsection.92}{}}
+\newlabel{subsec:prelim-neg-complexity@cref}{{[subsection][6][2,1]2.1.6}{[1][31][]31}}
+\citation{DeselEsparzaNegPN}
+\citation{EsparzaWorkflow}
+\citation{DijkmanBPMN}
+\citation{EsparzaFreeChoice}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1.7}Relation to standard negotiations and to Petri nets}{32}{subsection.93}\protected@file@percent }
+\newlabel{subsec:prelim-neg-relations}{{2.1.7}{32}{Relation to standard negotiations and to Petri nets}{subsection.93}{}}
+\newlabel{subsec:prelim-neg-relations@cref}{{[subsection][7][2,1]2.1.7}{[1][32][]32}}
+\@writefile{toc}{\contentsline {paragraph}{Relation to Petri nets.}{32}{subsection.93}\protected@file@percent }
+\citation{AlurDillTA}
+\@writefile{toc}{\contentsline {section}{\numberline {2.2}Timed Automata}{33}{section.94}\protected@file@percent }
+\newlabel{sec:prelim-ta}{{2.2}{33}{Timed Automata}{section.94}{}}
+\newlabel{sec:prelim-ta@cref}{{[section][2][2]2.2}{[1][33][]33}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.1}Syntax and Semantics}{33}{subsection.95}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Clock constraints.}{33}{subsection.95}\protected@file@percent }
+\@writefile{loe}{\contentsline {definition}{\numberline {2.6}Definition\thmtformatoptarg {Timed automaton}}{33}{definition.97}\protected@file@percent }
+\newlabel{def:timed-automaton}{{2.6}{33}{Timed automaton}{definition.97}{}}
+\newlabel{def:timed-automaton@cref}{{[definition][6][]2.6}{[1][33][]33}}
+\@writefile{toc}{\contentsline {paragraph}{Semantics.}{34}{definition.97}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{A small example.}{34}{definition.97}\protected@file@percent }
+\@writefile{loe}{\contentsline {definition}{\numberline {2.7}Definition\thmtformatoptarg {Reachability problem for TA}}{34}{definition.99}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.2}Region Abstraction and Decidability\nobreakspace  {}\cite  {}}{34}{subsection.100}\protected@file@percent }
+\@writefile{loe}{\contentsline {definition}{\numberline {2.8}Definition\thmtformatoptarg {Region equivalence \cite  {}}}{35}{definition.102}\protected@file@percent }
+\@writefile{loe}{\contentsline {definition}{\numberline {2.9}Definition\thmtformatoptarg {Regions \cite  {}}}{35}{definition.104}\protected@file@percent }
+\@writefile{loe}{\contentsline {definition}{\numberline {2.10}Definition\thmtformatoptarg {Region: constructive definition \cite  {}}}{35}{definition.106}\protected@file@percent }
+\@writefile{loe}{\contentsline {lemma}{\numberline {2.11}Lemma}{36}{lemma.108}\protected@file@percent }
+\@writefile{loe}{\contentsline {definition}{\numberline {2.12}Definition\thmtformatoptarg {Maximal bounds}}{36}{definition.110}\protected@file@percent }
+\@writefile{loe}{\contentsline {definition}{\numberline {2.13}Definition\thmtformatoptarg {Region graph \cite  {}}}{36}{definition.112}\protected@file@percent }
+\@writefile{loe}{\contentsline {lemma}{\numberline {2.14}Lemma\thmtformatoptarg {Pre-stability of regions}}{37}{lemma.114}\protected@file@percent }
+\newlabel{lem:prestability}{{2.14}{37}{Pre-stability of regions}{lemma.114}{}}
+\newlabel{lem:prestability@cref}{{[lemma][14][]2.14}{[1][36][]37}}
+\@writefile{loe}{\contentsline {lemma}{\numberline {2.15}Lemma}{37}{lemma.116}\protected@file@percent }
+\@writefile{loe}{\contentsline {theorem}{\numberline {2.16}Theorem\thmtformatoptarg {\cite  {}}}{37}{theorem.118}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{What to retain from timed automata.}{37}{theorem.118}\protected@file@percent }
+\citation{LocalTimeTA}
+\citation{LocalZone1}
+\citation{LocalZone2}
+\citation{LocalBuchi}
+\@writefile{toc}{\contentsline {section}{\numberline {2.3}Networks of timed automata and the local-time contrast}{38}{section.122}\protected@file@percent }
+\newlabel{sec:prelim-nta}{{2.3}{38}{Networks of timed automata and the local-time contrast}{section.122}{}}
+\newlabel{sec:prelim-nta@cref}{{[section][3][2]2.3}{[1][37][]38}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.1}Global-time semantics for networks}{38}{subsection.123}\protected@file@percent }
+\newlabel{subsec:prelim-nta-global}{{2.3.1}{38}{Global-time semantics for networks}{subsection.123}{}}
+\newlabel{subsec:prelim-nta-global@cref}{{[subsection][1][2,3]2.3.1}{[1][38][]38}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.2}Why this is not yet the right model}{38}{subsection.124}\protected@file@percent }
+\newlabel{subsec:prelim-nta-contrast}{{2.3.2}{38}{Why this is not yet the right model}{subsection.124}{}}
+\newlabel{subsec:prelim-nta-contrast@cref}{{[subsection][2][2,3]2.3.2}{[1][38][]38}}
+\@writefile{toc}{\contentsline {paragraph}{Local-time semantics as a bridge.}{39}{subsection.124}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {2.4}From these ingredients to LTNs}{39}{section.125}\protected@file@percent }
+\newlabel{sec:prelim-synthesis}{{2.4}{39}{From these ingredients to LTNs}{section.125}{}}
+\newlabel{sec:prelim-synthesis@cref}{{[section][4][2]2.4}{[1][39][]39}}
+\@writefile{toc}{\contentsline {paragraph}{From negotiations we keep:}{39}{section.125}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{From timed automata we keep:}{39}{section.125}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{What Chapter\nobreakspace  {}\ref  {chap:ltn} will change.}{39}{section.125}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {2.5}Terminology summary}{39}{section.126}\protected@file@percent }
+\newlabel{sec:prelim-terminology}{{2.5}{39}{Terminology summary}{section.126}{}}
+\newlabel{sec:prelim-terminology@cref}{{[section][5][2]2.5}{[1][39][]39}}
+\@writefile{lot}{\contentsline {table}{\numberline {2.1}{\ignorespaces Terminology summary for Chapters\nobreakspace  {}2--6.\relax }}{40}{table.caption.127}\protected@file@percent }
+\newlabel{tab:terminology-summary}{{2.1}{40}{Terminology summary for Chapters~2--6.\relax }{table.caption.127}{}}
+\newlabel{tab:terminology-summary@cref}{{[table][1][2]2.1}{[1][39][]40}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.6}What to carry forward}{41}{section.128}\protected@file@percent }
+\newlabel{sec:prelim-takeaway}{{2.6}{41}{What to carry forward}{section.128}{}}
+\newlabel{sec:prelim-takeaway@cref}{{[section][6][2]2.6}{[1][39][]41}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.7}Coming next}{41}{section.133}\protected@file@percent }
+\newlabel{sec:prelim-next}{{2.7}{41}{Coming next}{section.133}{}}
+\newlabel{sec:prelim-next@cref}{{[section][7][2]2.7}{[1][41][]41}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {3}Local-Timed Negotiations}{42}{chapter.134}\protected@file@percent }
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\@writefile{loa}{\addvspace {10\p@ }}
+\newlabel{chap:ltn}{{3}{42}{Local-Timed Negotiations}{chapter.134}{}}
+\newlabel{chap:ltn@cref}{{[chapter][3][]3}{[1][42][]42}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.1}Motivation: Why Local Time?}{42}{section.135}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{The inadequacy of global time.}{42}{section.135}\protected@file@percent }
+\citation{DBLP:conf/concur/EsparzaD13}
+\citation{DBLP:journals/acta/DeselEH19}
+\citation{DBLP:journals/lmcs/EsparzaKMW18}
+\citation{DBLP:conf/lics/EsparzaMW17}
+\citation{DBLP:conf/fossacs/AkshayGHM20}
+\@writefile{toc}{\contentsline {paragraph}{The local-time perspective.}{43}{section.135}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{What we gain.}{43}{section.135}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{What we sacrifice.}{43}{section.135}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Chapter roadmap.}{43}{section.135}\protected@file@percent }
+\citation{DBLP:conf/concur/BengtssonJLY98}
+\citation{DBLP:conf/concur/GovindHSW19}
+\citation{DBLP:conf/lics/0001HSW22}
+\citation{DBLP:conf/concur/HerbreteauSW22}
+\citation{DBLP:conf/fossacs/AkshayGHM20}
+\citation{DBLP:conf/fossacs/AkshayGHM20}
+\@writefile{toc}{\contentsline {section}{\numberline {3.2}Related work}{44}{section.136}\protected@file@percent }
+\newlabel{sec:ltn-related}{{3.2}{44}{Related work}{section.136}{}}
+\newlabel{sec:ltn-related@cref}{{[section][2][3]3.2}{[1][43][]44}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.1}Comparison with Timed Negotiations\nobreakspace  {}\cite  {DBLP:conf/fossacs/AkshayGHM20}}{44}{subsection.137}\protected@file@percent }
+\newlabel{subsec:ltn-vs-tn}{{3.2.1}{44}{Comparison with Timed Negotiations~\cite {DBLP:conf/fossacs/AkshayGHM20}}{subsection.137}{}}
+\newlabel{subsec:ltn-vs-tn@cref}{{[subsection][1][3,2]3.2.1}{[1][44][]44}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.3}Introducing Local-Timed Negotiations: An Informal Example}{44}{section.138}\protected@file@percent }
+\newlabel{sec:ltn-example-informal}{{3.3}{44}{Introducing Local-Timed Negotiations: An Informal Example}{section.138}{}}
+\newlabel{sec:ltn-example-informal@cref}{{[section][3][3]3.3}{[1][44][]44}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.1}{\ignorespaces ATM transaction as a local-timed negotiation. Customer $c$ has local clock $x$ (reset at $\mathsf  {req}$, checked at $\mathsf  {e\_otp}$ and $\mathsf  {g\_up}$). Bank $b$ has local clock $y$ (reset at $\mathsf  {s\_otp}$, checked at $\mathsf  {match}$ and $\mathsf  {fail}$). Annotations like "$x \leq 10$" are guards; "$\{x\}$" indicates clock reset.\relax }}{45}{figure.caption.144}\protected@file@percent }
+\newlabel{fig:ATM}{{3.1}{45}{ATM transaction as a local-timed negotiation. Customer $c$ has local clock $x$ (reset at $\mathsf {req}$, checked at $\mathsf {e\_otp}$ and $\mathsf {g\_up}$). Bank $b$ has local clock $y$ (reset at $\mathsf {s\_otp}$, checked at $\mathsf {match}$ and $\mathsf {fail}$). Annotations like "$x \leq 10$" are guards; "$\{x\}$" indicates clock reset.\relax }{figure.caption.144}{}}
+\newlabel{fig:ATM@cref}{{[figure][1][3]3.1}{[1][45][]45}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.1}Scenario: ATM Transaction with Timeouts}{45}{subsection.139}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.2}Modeling with Local Clocks}{45}{subsection.143}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Agent local clocks.}{46}{figure.caption.144}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{How timing constraints work.}{46}{figure.caption.144}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Local time progression.}{46}{Item.150}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Illustrative run.}{47}{Item.150}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Why this matters.}{47}{Item.150}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.3}Preview: Synchronization}{47}{subsection.151}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {3.4}Formal Definition}{47}{section.152}\protected@file@percent }
+\newlabel{sec:ltn-def}{{3.4}{47}{Formal Definition}{section.152}{}}
+\newlabel{sec:ltn-def@cref}{{[section][4][3]3.4}{[1][47][]47}}
+\@writefile{toc}{\contentsline {paragraph}{Notation.}{48}{section.152}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Guards.}{48}{section.152}\protected@file@percent }
+\@writefile{loe}{\addvspace {10\p@ }}
+\@writefile{loe}{\contentsline {definition}{\numberline {3.1}Definition\thmtformatoptarg {Local-timed negotiation}}{48}{definition.154}\protected@file@percent }
+\newlabel{def:ltn}{{3.1}{48}{Local-timed negotiation}{definition.154}{}}
+\newlabel{def:ltn@cref}{{[definition][1][]3.1}{[1][48][]48}}
+\@writefile{toc}{\contentsline {paragraph}{Intuition recap.}{49}{definition.154}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {3.5}Semantics}{49}{section.160}\protected@file@percent }
+\newlabel{sec:ltn-semantics}{{3.5}{49}{Semantics}{section.160}{}}
+\newlabel{sec:ltn-semantics@cref}{{[section][5][3]3.5}{[1][49][]49}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.5.1}Markings, Valuations, and Configurations}{49}{subsection.161}\protected@file@percent }
+\@writefile{loe}{\contentsline {definition}{\numberline {3.2}Definition\thmtformatoptarg {Marking}}{49}{definition.163}\protected@file@percent }
+\@writefile{loe}{\contentsline {definition}{\numberline {3.3}Definition\thmtformatoptarg {Valuation and well-formedness}}{49}{definition.165}\protected@file@percent }
+\@writefile{loe}{\contentsline {definition}{\numberline {3.4}Definition\thmtformatoptarg {Configuration}}{49}{definition.167}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.5.2}Transitions: Delays and Actions}{50}{subsection.168}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Local delays.}{50}{subsection.168}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Clock resets.}{50}{subsection.168}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Delay steps.}{50}{subsection.168}\protected@file@percent }
+\@writefile{loe}{\contentsline {definition}{\numberline {3.5}Definition\thmtformatoptarg {Delay step}}{50}{definition.170}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Action steps.}{50}{definition.170}\protected@file@percent }
+\@writefile{loe}{\contentsline {definition}{\numberline {3.6}Definition\thmtformatoptarg {Action step}}{50}{definition.172}\protected@file@percent }
+\newlabel{def:action-step}{{3.6}{50}{Action step}{definition.172}{}}
+\newlabel{def:action-step@cref}{{[definition][6][]3.6}{[1][50][]50}}
+\@writefile{toc}{\contentsline {paragraph}{Small steps and runs.}{51}{Item.177}\protected@file@percent }
+\@writefile{loe}{\contentsline {definition}{\numberline {3.7}Definition\thmtformatoptarg {Small step}}{51}{definition.179}\protected@file@percent }
+\@writefile{loe}{\contentsline {definition}{\numberline {3.8}Definition\thmtformatoptarg {Run}}{51}{definition.181}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.5.3}Location Reachability}{51}{subsection.182}\protected@file@percent }
+\@writefile{loe}{\contentsline {definition}{\numberline {3.9}Definition\thmtformatoptarg {Location reachability}}{51}{definition.184}\protected@file@percent }
+\newlabel{def:location-reachability}{{3.9}{51}{Location reachability}{definition.184}{}}
+\newlabel{def:location-reachability@cref}{{[definition][9][]3.9}{[1][51][]51}}
+\@writefile{toc}{\contentsline {paragraph}{Untimed projection.}{51}{definition.184}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.5.4}Design choices and modelling rationale}{51}{subsection.186}\protected@file@percent }
+\newlabel{subsec:ltn-design}{{3.5.4}{51}{Design choices and modelling rationale}{subsection.186}{}}
+\newlabel{subsec:ltn-design@cref}{{[subsection][4][3,5]3.5.4}{[1][51][]51}}
+\@writefile{toc}{\contentsline {paragraph}{Local clocks and delay vectors.}{51}{subsection.186}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3.2}{\ignorespaces Independent local time evolution allows relative timing differences between agents to persist across interactions.\relax }}{52}{figure.caption.185}\protected@file@percent }
+\newlabel{fig:persistent-drift}{{3.2}{52}{Independent local time evolution allows relative timing differences between agents to persist across interactions.\relax }{figure.caption.185}{}}
+\newlabel{fig:persistent-drift@cref}{{[figure][2][3]3.2}{[1][51][]52}}
+\@writefile{toc}{\contentsline {paragraph}{Reference clocks.}{52}{subsection.186}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Synchronization as a constraint.}{52}{subsection.186}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Node-based synchronization.}{52}{subsection.186}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Local guards and resets.}{52}{subsection.186}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {3.6}Expressiveness}{52}{section.187}\protected@file@percent }
+\newlabel{sec:ltn-expressiveness}{{3.6}{52}{Expressiveness}{section.187}{}}
+\newlabel{sec:ltn-expressiveness@cref}{{[section][6][3]3.6}{[1][52][]52}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.3}{\ignorespaces Vendor enforcement example. Nodes $n_1$ and $n_3$ are synchronizing (shown with dotted style). At $n_1$, outcome $a$ has guards $x = 2$ for $p$ and $y = 0$ for $q$. At $n_3$, outcome $b$ requires $y = 0$ for $q$. Synchronization forces $q$ to visit vendor $v$ at $n_2$ to accumulate the needed 2 time units. In the figure on the right, the $a$ transition has guards $x = m$ for $p$ and $y = 0$ for $q$. Each $b_i$ transition has a guard $y=1$ and a reset of $y$ to ensure exactly $1$ unit of time is spent in the nodes $m_i$ before outcomes $b_i$. The outcomes $a_i$ have a reset of $y$. The $b$ transition from $n_3$ has a guard $y=0$.\relax }}{53}{figure.caption.191}\protected@file@percent }
+\newlabel{fig:vendor}{{3.3}{53}{Vendor enforcement example. Nodes $n_1$ and $n_3$ are synchronizing (shown with dotted style). At $n_1$, outcome $a$ has guards $x = 2$ for $p$ and $y = 0$ for $q$. At $n_3$, outcome $b$ requires $y = 0$ for $q$. Synchronization forces $q$ to visit vendor $v$ at $n_2$ to accumulate the needed 2 time units. In the figure on the right, the $a$ transition has guards $x = m$ for $p$ and $y = 0$ for $q$. Each $b_i$ transition has a guard $y=1$ and a reset of $y$ to ensure exactly $1$ unit of time is spent in the nodes $m_i$ before outcomes $b_i$. The outcomes $a_i$ have a reset of $y$. The $b$ transition from $n_3$ has a guard $y=0$.\relax }{figure.caption.191}{}}
+\newlabel{fig:vendor@cref}{{[figure][3][3]3.3}{[1][53][]53}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.6.1}Causal Enforcement Through Synchronization}{53}{subsection.188}\protected@file@percent }
+\newlabel{subsec:ltn-causal}{{3.6.1}{53}{Causal Enforcement Through Synchronization}{subsection.188}{}}
+\newlabel{subsec:ltn-causal@cref}{{[subsection][1][3,6]3.6.1}{[1][52][]53}}
+\@writefile{loe}{\contentsline {example}{\numberline {3.9.1}Example\thmtformatoptarg {Forcing intermediate interactions via timing}}{53}{example.190}\protected@file@percent }
+\newlabel{ex:vendor}{{3.9.1}{53}{Forcing intermediate interactions via timing}{example.190}{}}
+\newlabel{ex:vendor@cref}{{[example][1][]3.9.1}{[1][53][]53}}
+\@writefile{toc}{\contentsline {paragraph}{Setup.}{53}{figure.caption.191}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{What happens.}{53}{figure.caption.191}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{The only solution.}{54}{figure.caption.191}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Generalization.}{54}{Item.195}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Contrast with global time.}{54}{Item.195}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.6.2}Non-regular untimed languages}{54}{subsection.196}\protected@file@percent }
+\newlabel{subsec:ltn-nonregular}{{3.6.2}{54}{Non-regular untimed languages}{subsection.196}{}}
+\newlabel{subsec:ltn-nonregular@cref}{{[subsection][2][3,6]3.6.2}{[1][54][]54}}
+\@writefile{loe}{\contentsline {example}{\numberline {3.9.2}Example\thmtformatoptarg {Generating $\{a^n b^n c \mid n \geq 0\}$}}{54}{example.198}\protected@file@percent }
+\newlabel{ex:anbn}{{3.9.2}{54}{Generating $\{a^n b^n c \mid n \geq 0\}$}{example.198}{}}
+\newlabel{ex:anbn@cref}{{[example][2][]3.9.2}{[1][54][]54}}
+\@writefile{toc}{\contentsline {paragraph}{Mechanism.}{54}{figure.caption.199}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3.4}{\ignorespaces Non-regular untimed language. Each loop iteration of $a$ and $b$ takes exactly 1 time unit. Node $n_3$ is synchronizing with guards $x = 1$ and $y = 1$. This forces the number of $a$s to equal the number of $b$s before $c$ occurs.\relax }}{55}{figure.caption.199}\protected@file@percent }
+\newlabel{fig:abc}{{3.4}{55}{Non-regular untimed language. Each loop iteration of $a$ and $b$ takes exactly 1 time unit. Node $n_3$ is synchronizing with guards $x = 1$ and $y = 1$. This forces the number of $a$s to equal the number of $b$s before $c$ occurs.\relax }{figure.caption.199}{}}
+\newlabel{fig:abc@cref}{{[figure][4][3]3.4}{[1][54][]55}}
+\@writefile{loe}{\contentsline {proposition}{\numberline {3.10}Proposition}{55}{proposition.201}\protected@file@percent }
+\newlabel{prop:anbnc}{{3.10}{55}{}{proposition.201}{}}
+\newlabel{prop:anbnc@cref}{{[proposition][10][]3.10}{[1][55][]55}}
+\@writefile{lot}{\contentsline {table}{\numberline {3.1}{\ignorespaces Where the extra expressive power of LTNs comes from.\relax }}{56}{table.caption.205}\protected@file@percent }
+\newlabel{tab:ltn-expressiveness}{{3.1}{56}{Where the extra expressive power of LTNs comes from.\relax }{table.caption.205}{}}
+\newlabel{tab:ltn-expressiveness@cref}{{[table][1][3]3.1}{[1][56][]56}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.5}{\ignorespaces A time-synchronizing interaction collapses relative timing differences, allowing accumulated information to be compared or reset.\relax }}{56}{figure.caption.206}\protected@file@percent }
+\newlabel{fig:selective-sync}{{3.5}{56}{A time-synchronizing interaction collapses relative timing differences, allowing accumulated information to be compared or reset.\relax }{figure.caption.206}{}}
+\newlabel{fig:selective-sync@cref}{{[figure][5][3]3.5}{[1][56][]56}}
+\@writefile{toc}{\contentsline {paragraph}{Why this matters.}{56}{proposition.201}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {3.2}{\ignorespaces How the reduction encodes a two-counter machine inside an LTN.\relax }}{57}{table.caption.210}\protected@file@percent }
+\newlabel{tab:red-dictionary}{{3.2}{57}{How the reduction encodes a two-counter machine inside an LTN.\relax }{table.caption.210}{}}
+\newlabel{tab:red-dictionary@cref}{{[table][2][3]3.2}{[1][57][]57}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.7}Undecidability of reachability}{57}{section.207}\protected@file@percent }
+\newlabel{sec:ltn-undec}{{3.7}{57}{Undecidability of reachability}{section.207}{}}
+\newlabel{sec:ltn-undec@cref}{{[section][7][3]3.7}{[1][56][]57}}
+\@writefile{toc}{\contentsline {paragraph}{Proof roadmap.}{57}{section.207}\protected@file@percent }
+\@writefile{loe}{\contentsline {theorem}{\numberline {3.11}Theorem}{57}{theorem.209}\protected@file@percent }
+\newlabel{thm:undecidability}{{3.11}{57}{}{theorem.209}{}}
+\newlabel{thm:undecidability@cref}{{[theorem][11][3]3.11}{[1][57][]57}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.7.1}Two-counter machines}{57}{subsection.211}\protected@file@percent }
+\newlabel{subsec:2cm}{{3.7.1}{57}{Two-counter machines}{subsection.211}{}}
+\newlabel{subsec:2cm@cref}{{[subsection][1][3,7]3.7.1}{[1][57][]57}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.7.2}Overview of the reduction}{58}{subsection.212}\protected@file@percent }
+\newlabel{subsec:red-overview}{{3.7.2}{58}{Overview of the reduction}{subsection.212}{}}
+\newlabel{subsec:red-overview@cref}{{[subsection][2][3,7]3.7.2}{[1][58][]58}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.6}{\ignorespaces Gadget for implementing increment instruction on $c_1$\relax }}{59}{figure.caption.218}\protected@file@percent }
+\newlabel{fig:increment}{{3.6}{59}{Gadget for implementing increment instruction on $c_1$\relax }{figure.caption.218}{}}
+\newlabel{fig:increment@cref}{{[figure][6][3]3.6}{[1][59][]59}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.7.3}Instruction gadgets}{59}{subsection.217}\protected@file@percent }
+\newlabel{subsec:gadgets}{{3.7.3}{59}{Instruction gadgets}{subsection.217}{}}
+\newlabel{subsec:gadgets@cref}{{[subsection][3][3,7]3.7.3}{[1][59][]59}}
+\@writefile{loe}{\contentsline {lemma}{\numberline {3.12}Lemma}{59}{lemma.220}\protected@file@percent }
+\newlabel{lem:increment}{{3.12}{59}{}{lemma.220}{}}
+\newlabel{lem:increment@cref}{{[lemma][12][]3.12}{[1][59][]59}}
+\@writefile{toc}{\contentsline {paragraph}{Decrement.}{60}{figure.caption.221}\protected@file@percent }
+\@writefile{loe}{\contentsline {lemma}{\numberline {3.13}Lemma}{60}{lemma.223}\protected@file@percent }
+\newlabel{lem:decrement}{{3.13}{60}{}{lemma.223}{}}
+\newlabel{lem:decrement@cref}{{[lemma][13][]3.13}{[1][60][]60}}
+\@writefile{toc}{\contentsline {paragraph}{Jump-on-zero.}{62}{figure.caption.224}\protected@file@percent }
+\@writefile{loe}{\contentsline {lemma}{\numberline {3.14}Lemma}{62}{lemma.226}\protected@file@percent }
+\newlabel{lem:jump}{{3.14}{62}{}{lemma.226}{}}
+\newlabel{lem:jump@cref}{{[lemma][14][]3.14}{[1][62][]62}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.8}Summary and perspective}{65}{section.227}\protected@file@percent }
+\newlabel{sec:summary-ch3}{{3.8}{65}{Summary and perspective}{section.227}{}}
+\newlabel{sec:summary-ch3@cref}{{[section][8][3]3.8}{[1][65][]65}}
+\@writefile{toc}{\contentsline {paragraph}{What causes undecidability?}{66}{section.227}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {3.9}Coming next}{66}{section.230}\protected@file@percent }
+\newlabel{sec:next-ch3}{{3.9}{66}{Coming next}{section.230}{}}
+\newlabel{sec:next-ch3@cref}{{[section][9][3]3.9}{[1][66][]66}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.7}{\ignorespaces Decrement gadget for counter $C_1$. The highlighted horizontal bars are the synchronizing nodes $n_1$ and $n_3$; the middle node $n_2$ is deliberately unsynchronizing. The gadget first copies the current reference time of $p_1$ into the witness agent $r_1$, then advances $p_1$ and $q_1$ together until $q_1$ catches up with that frozen witness. The branch taken afterwards depends on whether a positive amount of time was needed.\relax }}{68}{figure.caption.221}\protected@file@percent }
+\newlabel{fig:jump-decrement}{{3.7}{68}{Decrement gadget for counter $C_1$. The highlighted horizontal bars are the synchronizing nodes $n_1$ and $n_3$; the middle node $n_2$ is deliberately unsynchronizing. The gadget first copies the current reference time of $p_1$ into the witness agent $r_1$, then advances $p_1$ and $q_1$ together until $q_1$ catches up with that frozen witness. The branch taken afterwards depends on whether a positive amount of time was needed.\relax }{figure.caption.221}{}}
+\newlabel{fig:jump-decrement@cref}{{[figure][7][3]3.7}{[1][60][]68}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.8}{\ignorespaces Jump-on-zero gadget for counter $C_1$. It shares the same timing test as the decrement gadget, but routes the zero case to instruction $\ell '$ and the positive case to instruction $\ell +1$.\relax }}{69}{figure.caption.224}\protected@file@percent }
+\newlabel{fig:jump}{{3.8}{69}{Jump-on-zero gadget for counter $C_1$. It shares the same timing test as the decrement gadget, but routes the zero case to instruction $\ell '$ and the positive case to instruction $\ell +1$.\relax }{figure.caption.224}{}}
+\newlabel{fig:jump@cref}{{[figure][8][3]3.8}{[1][62][]69}}
+\@writefile{toc}{\contentsline {part}{II\hspace  {1em}Decidable subclasses for reachability in LTNs}{70}{part.231}\protected@file@percent }
+\@writefile{toc}{\contentsline {chapter}{\numberline {4}Synchronization Extremes: Free and Always-Synchronizing LTNs}{72}{chapter.232}\protected@file@percent }
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\@writefile{loa}{\addvspace {10\p@ }}
+\newlabel{chap:fragments}{{4}{72}{Synchronization Extremes: Free and Always-Synchronizing LTNs}{chapter.232}{}}
+\newlabel{chap:fragments@cref}{{[chapter][4][]4}{[1][72][]72}}
+\@writefile{toc}{\contentsline {paragraph}{Conceptual role of the extremes.}{73}{Item.234}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Main results.}{73}{Item.234}\protected@file@percent }
+\@writefile{loe}{\addvspace {10\p@ }}
+\@writefile{loe}{\contentsline {theorem}{\numberline {4.1}Theorem\thmtformatoptarg {Chapter results}}{73}{theorem.236}\protected@file@percent }
+\newlabel{thm:chapter-results}{{4.1}{73}{Chapter results}{theorem.236}{}}
+\newlabel{thm:chapter-results@cref}{{[theorem][1][4]4.1}{[1][73][]73}}
+\@writefile{toc}{\contentsline {paragraph}{Organization.}{73}{Item.238}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {4.1}Synchronization-Free LTNs}{73}{section.239}\protected@file@percent }
+\newlabel{sec:syncfree}{{4.1}{73}{Synchronization-Free LTNs}{section.239}{}}
+\newlabel{sec:syncfree@cref}{{[section][1][4]4.1}{[1][73][]73}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.1}Definition and Behavior}{73}{subsection.240}\protected@file@percent }
+\@writefile{loe}{\contentsline {definition}{\numberline {4.2}Definition\thmtformatoptarg {Synchronization-free LTN}}{73}{definition.242}\protected@file@percent }
+\newlabel{def:syncfree}{{4.2}{73}{Synchronization-free LTN}{definition.242}{}}
+\newlabel{def:syncfree@cref}{{[definition][2][]4.2}{[1][73][]73}}
+\@writefile{toc}{\contentsline {paragraph}{Expressiveness implications.}{74}{definition.242}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {4.1}{\ignorespaces Synchronization-free LTN illustrating implicit coordination. At $n_1$, agents $p$ and $q$ non-deterministically choose outcome $a$ or $b$. For outcome $c$ at $n_4$ to be feasible, both must have chosen $a$ (route through $n_2$), since $c$ requires $x \geq 2$ from $p$ and $y \leq 1$ from $q$—constraints incompatible with the $b$-route guards.\relax }}{74}{figure.caption.243}\protected@file@percent }
+\newlabel{fig:coord}{{4.1}{74}{Synchronization-free LTN illustrating implicit coordination. At $n_1$, agents $p$ and $q$ non-deterministically choose outcome $a$ or $b$. For outcome $c$ at $n_4$ to be feasible, both must have chosen $a$ (route through $n_2$), since $c$ requires $x \geq 2$ from $p$ and $y \leq 1$ from $q$—constraints incompatible with the $b$-route guards.\relax }{figure.caption.243}{}}
+\newlabel{fig:coord@cref}{{[figure][1][4]4.1}{[1][74][]74}}
+\citation{DBLP:journals/tcs/AlurD94}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.2}Product-region abstraction}{75}{subsection.244}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Geometric intuition.}{75}{subsection.244}\protected@file@percent }
+\@writefile{loe}{\contentsline {definition}{\numberline {4.3}Definition\thmtformatoptarg {Per-agent region equivalence}}{75}{definition.246}\protected@file@percent }
+\newlabel{def:per-agent-region}{{4.3}{75}{Per-agent region equivalence}{definition.246}{}}
+\newlabel{def:per-agent-region@cref}{{[definition][3][]4.3}{[1][75][]75}}
+\@writefile{loe}{\contentsline {definition}{\numberline {4.4}Definition\thmtformatoptarg {Product-region equivalence}}{75}{definition.251}\protected@file@percent }
+\newlabel{def:product-region}{{4.4}{75}{Product-region equivalence}{definition.251}{}}
+\newlabel{def:product-region@cref}{{[definition][4][]4.4}{[1][75][]75}}
+\@writefile{loe}{\contentsline {lemma}{\numberline {4.5}Lemma\thmtformatoptarg {Finite index}}{76}{lemma.253}\protected@file@percent }
+\newlabel{lem:size-of-product-regions}{{4.5}{76}{Finite index}{lemma.253}{}}
+\newlabel{lem:size-of-product-regions@cref}{{[lemma][5][]4.5}{[1][75][]76}}
+\@writefile{loe}{\contentsline {lemma}{\numberline {4.6}Lemma\thmtformatoptarg {Compatibility with local delays}}{77}{lemma.255}\protected@file@percent }
+\newlabel{lemma:region-local-delay}{{4.6}{77}{Compatibility with local delays}{lemma.255}{}}
+\newlabel{lemma:region-local-delay@cref}{{[lemma][6][]4.6}{[1][77][]77}}
+\@writefile{loe}{\contentsline {lemma}{\numberline {4.7}Lemma\thmtformatoptarg {Compatibility with guards and resets}}{77}{lemma.257}\protected@file@percent }
+\newlabel{lem:region-guard-reset}{{4.7}{77}{Compatibility with guards and resets}{lemma.257}{}}
+\newlabel{lem:region-guard-reset@cref}{{[lemma][7][]4.7}{[1][77][]77}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.3}The product-region automaton}{79}{subsection.260}\protected@file@percent }
+\@writefile{loe}{\contentsline {definition}{\numberline {4.8}Definition\thmtformatoptarg {Product-region automaton}}{79}{definition.262}\protected@file@percent }
+\newlabel{def:pr-automaton}{{4.8}{79}{Product-region automaton}{definition.262}{}}
+\newlabel{def:pr-automaton@cref}{{[definition][8][]4.8}{[1][79][]79}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.4}Product-Region Calculations on an Example}{79}{subsection.263}\protected@file@percent }
+\newlabel{subsec:explicit-pr-example}{{4.1.4}{79}{Product-Region Calculations on an Example}{subsection.263}{}}
+\newlabel{subsec:explicit-pr-example@cref}{{[subsection][4][4,1]4.1.4}{[1][79][]79}}
+\@writefile{toc}{\contentsline {paragraph}{The example.}{79}{subsection.263}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {4.2}{\ignorespaces A simple synchronization-free LTN.\relax }}{80}{figure.caption.265}\protected@file@percent }
+\newlabel{fig:coord}{{4.2}{80}{A simple synchronization-free LTN.\relax }{figure.caption.265}{}}
+\newlabel{fig:coord@cref}{{[figure][2][4]4.2}{[1][80][]80}}
+\@writefile{toc}{\contentsline {paragraph}{Maximal constant.}{80}{figure.caption.265}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Guard satisfaction at the region level.}{81}{figure.caption.265}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Initial valuation.}{81}{figure.caption.265}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Step 1: delay then $(n_1,b)$.}{81}{figure.caption.265}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Step 2: delay then $(n_2,c)$.}{81}{figure.caption.265}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Region-trace summary.}{81}{figure.caption.265}\protected@file@percent }
+\@writefile{loe}{\contentsline {lemma}{\numberline {4.9}Lemma\thmtformatoptarg {Soundness and completeness}}{82}{lemma.267}\protected@file@percent }
+\newlabel{lem:reg-prod-reg-equiv}{{4.9}{82}{Soundness and completeness}{lemma.267}{}}
+\newlabel{lem:reg-prod-reg-equiv@cref}{{[lemma][9][]4.9}{[1][82][]82}}
+\citation{SAVITCH1970177}
+\citation{DBLP:journals/tcs/AlurD94}
+\@writefile{loe}{\contentsline {theorem}{\numberline {4.10}Theorem}{84}{theorem.272}\protected@file@percent }
+\newlabel{thm:pspace-syncfree}{{4.10}{84}{}{theorem.272}{}}
+\newlabel{thm:pspace-syncfree@cref}{{[theorem][10][4]4.10}{[1][84][]84}}
+\@writefile{toc}{\contentsline {paragraph}{Upper bound.}{84}{theorem.272}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Lower bound.}{84}{theorem.272}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {4.2}Always-synchronizing LTNs}{85}{section.273}\protected@file@percent }
+\newlabel{sec:always-synchr-negot}{{4.2}{85}{Always-synchronizing LTNs}{section.273}{}}
+\newlabel{sec:always-synchr-negot@cref}{{[section][2][4]4.2}{[1][84][]85}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.1}Definition and Intuitive Behavior}{85}{subsection.274}\protected@file@percent }
+\@writefile{loe}{\contentsline {definition}{\numberline {4.11}Definition\thmtformatoptarg {Always-synchronizing LTN}}{85}{definition.276}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Need for different technique.}{85}{definition.276}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Key insight: monotone witnesses.}{85}{Item.278}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.2}Monotone runs}{85}{subsection.279}\protected@file@percent }
+\@writefile{loe}{\contentsline {definition}{\numberline {4.12}Definition\thmtformatoptarg {Timestamp of a location and monotonicity}}{85}{definition.281}\protected@file@percent }
+\newlabel{def:timestamp}{{4.12}{85}{Timestamp of a location and monotonicity}{definition.281}{}}
+\newlabel{def:timestamp@cref}{{[definition][12][]4.12}{[1][85][]85}}
+\@writefile{toc}{\contentsline {paragraph}{Intuition.}{86}{definition.281}\protected@file@percent }
+\@writefile{loe}{\contentsline {example}{\numberline {4.12.1}Example\thmtformatoptarg {A non-monotone run in the running example, and its monotone rearrangement}}{86}{example.283}\protected@file@percent }
+\newlabel{ex:nonmonotone-running}{{4.12.1}{86}{A non-monotone run in the running example, and its monotone rearrangement}{example.283}{}}
+\newlabel{ex:nonmonotone-running@cref}{{[example][1][]4.12.1}{[1][86][]86}}
+\@writefile{loe}{\contentsline {lemma}{\numberline {4.13}Lemma\thmtformatoptarg {Inversions involve disjoint domains}}{87}{lemma.285}\protected@file@percent }
+\newlabel{lem:inversion-disjoint}{{4.13}{87}{Inversions involve disjoint domains}{lemma.285}{}}
+\newlabel{lem:inversion-disjoint@cref}{{[lemma][13][]4.13}{[1][87][]87}}
+\@writefile{toc}{\contentsline {paragraph}{Timeline intuition.}{87}{lemma.285}\protected@file@percent }
+\@writefile{loe}{\contentsline {lemma}{\numberline {4.14}Lemma\thmtformatoptarg {Existence of monotone witnesses}}{87}{lemma.287}\protected@file@percent }
+\newlabel{lem:monotonic}{{4.14}{87}{Existence of monotone witnesses}{lemma.287}{}}
+\newlabel{lem:monotonic@cref}{{[lemma][14][]4.14}{[1][87][]87}}
+\@writefile{toc}{\contentsline {paragraph}{Why this helps.}{89}{lemma.287}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.3}Reduction to timed automata}{90}{subsection.288}\protected@file@percent }
+\@writefile{loe}{\contentsline {definition}{\numberline {4.15}Definition\thmtformatoptarg {Timed automaton of an always-synchronizing LTN}}{90}{definition.290}\protected@file@percent }
+\newlabel{def:ta-always}{{4.15}{90}{Timed automaton of an always-synchronizing LTN}{definition.290}{}}
+\newlabel{def:ta-always@cref}{{[definition][15][]4.15}{[1][90][]90}}
+\@writefile{toc}{\contentsline {paragraph}{Intuition.}{90}{Item.293}\protected@file@percent }
+\@writefile{loe}{\contentsline {lemma}{\numberline {4.16}Lemma\thmtformatoptarg {Correctness of the reduction}}{90}{lemma.295}\protected@file@percent }
+\newlabel{lem:ta-for-always-sync}{{4.16}{90}{Correctness of the reduction}{lemma.295}{}}
+\newlabel{lem:ta-for-always-sync@cref}{{[lemma][16][]4.16}{[1][90][]90}}
+\@writefile{loe}{\contentsline {theorem}{\numberline {4.17}Theorem}{92}{theorem.297}\protected@file@percent }
+\newlabel{thm:pspace-always}{{4.17}{92}{}{theorem.297}{}}
+\newlabel{thm:pspace-always@cref}{{[theorem][17][4]4.17}{[1][92][]92}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.3}Summary and perspective}{92}{section.298}\protected@file@percent }
+\newlabel{sec:fragments-summary}{{4.3}{92}{Summary and perspective}{section.298}{}}
+\newlabel{sec:fragments-summary@cref}{{[section][3][4]4.3}{[1][92][]92}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.1}Comparing the Two Fragments}{93}{subsection.299}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.2}Why Both Are PSPACE (Not Lower, Not Higher)}{93}{subsection.300}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Why not lower than PSPACE?}{93}{subsection.300}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Why not higher than PSPACE (avoiding undecidability)?}{93}{subsection.300}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{What's missing for undecidability?}{93}{subsection.300}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.3}The Design Space}{94}{subsection.301}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Intermediate fragments.}{94}{subsection.301}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {4.4}Coming next}{94}{section.302}\protected@file@percent }
+\newlabel{sec:fragments-coming-next}{{4.4}{94}{Coming next}{section.302}{}}
+\newlabel{sec:fragments-coming-next@cref}{{[section][4][4]4.4}{[1][94][]94}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {5}Drift-Bounded and Acyclic Local-Timed Negotiations}{95}{chapter.303}\protected@file@percent }
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\@writefile{loa}{\addvspace {10\p@ }}
+\newlabel{chap:drift-bounded}{{5}{95}{Drift-Bounded and Acyclic Local-Timed Negotiations}{chapter.303}{}}
+\newlabel{chap:drift-bounded@cref}{{[chapter][5][]5}{[1][95][]95}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.1}Introduction: From Synchronization to Drift}{95}{section.304}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Semantic restriction: $k$-drift boundedness.}{96}{section.304}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Finite abstraction and decidability.}{96}{section.304}\protected@file@percent }
+\@writefile{loe}{\addvspace {10\p@ }}
+\@writefile{loe}{\contentsline {theorem}{\numberline {5.1}Theorem\thmtformatoptarg {Decidability for drift-bounded LTNs}}{96}{theorem.306}\protected@file@percent }
+\newlabel{thm:drift-main-result}{{5.1}{96}{Decidability for drift-bounded LTNs}{theorem.306}{}}
+\newlabel{thm:drift-main-result@cref}{{[theorem][1][5]5.1}{[1][96][]96}}
+\@writefile{toc}{\contentsline {paragraph}{Structural implication: acyclic LTNs.}{96}{theorem.306}\protected@file@percent }
+\@writefile{loe}{\contentsline {theorem}{\numberline {5.2}Theorem\thmtformatoptarg {Complexity for acyclic LTNs}}{96}{theorem.308}\protected@file@percent }
+\newlabel{thm:acyclic-np-complete}{{5.2}{96}{Complexity for acyclic LTNs}{theorem.308}{}}
+\newlabel{thm:acyclic-np-complete@cref}{{[theorem][2][5]5.2}{[1][96][]96}}
+\@writefile{toc}{\contentsline {paragraph}{Meta-complexity.}{96}{theorem.308}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {5.2}Drift: Definition, Intuition, and Examples}{97}{section.309}\protected@file@percent }
+\newlabel{sec:drift-def}{{5.2}{97}{Drift: Definition, Intuition, and Examples}{section.309}{}}
+\newlabel{sec:drift-def@cref}{{[section][2][5]5.2}{[1][97][]97}}
+\@writefile{loe}{\contentsline {definition}{\numberline {5.3}Definition\thmtformatoptarg {Drift}}{97}{definition.311}\protected@file@percent }
+\newlabel{def:drift}{{5.3}{97}{Drift}{definition.311}{}}
+\newlabel{def:drift@cref}{{[definition][3][]5.3}{[1][97][]97}}
+\newlabel{fig:drift_unbounded}{{5.1a}{98}{\textbf {Unbounded Drift.} The difference $|v(t_p) - v(t_q)|$ can grow arbitrarily. Reachable states diverge far from the diagonal $t_p = t_q$, requiring infinite state space to track all possibilities.\relax }{figure.caption.313}{}}
+\newlabel{fig:drift_unbounded@cref}{{[subfigure][1][5,1]5.1a}{[1][97][]98}}
+\newlabel{sub@fig:drift_unbounded}{{a}{98}{\textbf {Unbounded Drift.} The difference $|v(t_p) - v(t_q)|$ can grow arbitrarily. Reachable states diverge far from the diagonal $t_p = t_q$, requiring infinite state space to track all possibilities.\relax }{figure.caption.313}{}}
+\newlabel{sub@fig:drift_unbounded@cref}{{[subfigure][1][5,1]5.1a}{[1][97][]98}}
+\newlabel{fig:drift_bounded}{{5.1b}{98}{\textbf {Bounded Drift ($k$-bounded).} All reachable configurations satisfy $|v(t_p) - v(t_q)| \le k$. States are confined to a diagonal band of width $2k$, enabling finite region abstraction.\relax }{figure.caption.313}{}}
+\newlabel{fig:drift_bounded@cref}{{[subfigure][2][5,1]5.1b}{[1][97][]98}}
+\newlabel{sub@fig:drift_bounded}{{b}{98}{\textbf {Bounded Drift ($k$-bounded).} All reachable configurations satisfy $|v(t_p) - v(t_q)| \le k$. States are confined to a diagonal band of width $2k$, enabling finite region abstraction.\relax }{figure.caption.313}{}}
+\newlabel{sub@fig:drift_bounded@cref}{{[subfigure][2][5,1]5.1b}{[1][97][]98}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.1}{\ignorespaces Geometric interpretation of drift in the space of reference clocks. The axes represent reference-clock values $v(t_p)$ and $v(t_q)$ for two agents. Although both values grow unboundedly over time, $k$-drift boundedness constrains their relative positions.\relax }}{98}{figure.caption.313}\protected@file@percent }
+\newlabel{fig:drift_comparison}{{5.1}{98}{Geometric interpretation of drift in the space of reference clocks. The axes represent reference-clock values $v(t_p)$ and $v(t_q)$ for two agents. Although both values grow unboundedly over time, $k$-drift boundedness constrains their relative positions.\relax }{figure.caption.313}{}}
+\newlabel{fig:drift_comparison@cref}{{[figure][1][5]5.1}{[1][97][]98}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.1}Geometric Intuition}{98}{subsection.312}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Unbounded drift (left).}{98}{figure.caption.313}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Bounded drift (right).}{98}{figure.caption.313}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.2}Motivating Examples}{98}{subsection.314}\protected@file@percent }
+\@writefile{loe}{\contentsline {example}{\numberline {5.3.1}Example\thmtformatoptarg {Unbounded vs.\ bounded drift}}{99}{example.316}\protected@file@percent }
+\newlabel{ex:drift}{{5.3.1}{99}{Unbounded vs.\ bounded drift}{example.316}{}}
+\newlabel{ex:drift@cref}{{[example][1][]5.3.1}{[1][98][]99}}
+\@writefile{toc}{\contentsline {paragraph}{LTN $\mathcal  {N}_1$ (left): Unbounded drift.}{99}{example.316}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{LTN $\mathcal  {N}_2$ (right): Bounded drift.}{99}{example.316}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {5.2}{\ignorespaces LTN $\mathcal  {N}_1$ with unbounded drift (left) and $1$-drift bounded LTN $\mathcal  {N}_2$ (right). The dotted line in $\mathcal  {N}_2$ indicates a synchronizing interaction.\relax }}{99}{figure.caption.317}\protected@file@percent }
+\newlabel{fig:abc}{{5.2}{99}{LTN $\Nn _1$ with unbounded drift (left) and $1$-drift bounded LTN $\Nn _2$ (right). The dotted line in $\Nn _2$ indicates a synchronizing interaction.\relax }{figure.caption.317}{}}
+\newlabel{fig:abc@cref}{{[figure][2][5]5.2}{[1][99][]99}}
+\@writefile{loe}{\contentsline {example}{\numberline {5.3.2}Example\thmtformatoptarg {ATM transaction with bounded drift}}{99}{example.319}\protected@file@percent }
+\newlabel{ex:atm-bounded-drift}{{5.3.2}{99}{ATM transaction with bounded drift}{example.319}{}}
+\newlabel{ex:atm-bounded-drift@cref}{{[example][2][]5.3.2}{[1][99][]99}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.3}Drift-Bounded Runs and LTNs}{100}{subsection.320}\protected@file@percent }
+\@writefile{loe}{\contentsline {definition}{\numberline {5.4}Definition\thmtformatoptarg {$k$-drift-bounded run}}{100}{definition.322}\protected@file@percent }
+\newlabel{def:drift-bounded-run}{{5.4}{100}{$k$-drift-bounded run}{definition.322}{}}
+\newlabel{def:drift-bounded-run@cref}{{[definition][4][]5.4}{[1][100][]100}}
+\@writefile{loe}{\contentsline {definition}{\numberline {5.5}Definition\thmtformatoptarg {$k$-drift-bounded LTN}}{100}{definition.324}\protected@file@percent }
+\newlabel{def:retiming-bounded}{{5.5}{100}{$k$-drift-bounded LTN}{definition.324}{}}
+\newlabel{def:retiming-bounded@cref}{{[definition][5][]5.5}{[1][100][]100}}
+\citation{DBLP:conf/concur/HerbreteauSW22}
+\@writefile{toc}{\contentsline {paragraph}{Existential vs.\ universal drift boundedness.}{101}{definition.324}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {5.3}The $k$-Drift Bounded Fragment}{101}{section.325}\protected@file@percent }
+\newlabel{sec:k-drift-fragment}{{5.3}{101}{The $k$-Drift Bounded Fragment}{section.325}{}}
+\newlabel{sec:k-drift-fragment@cref}{{[section][3][5]5.3}{[1][101][]101}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3.1}Region Abstraction Under Bounded Drift}{101}{subsection.326}\protected@file@percent }
+\newlabel{sec:k-regions}{{5.3.1}{101}{Region Abstraction Under Bounded Drift}{subsection.326}{}}
+\newlabel{sec:k-regions@cref}{{[subsection][1][5,3]5.3.1}{[1][101][]101}}
+\@writefile{loe}{\contentsline {definition}{\numberline {5.6}Definition\thmtformatoptarg {$k$-Drift region equivalence $\cong  _M^k$}}{101}{definition.328}\protected@file@percent }
+\newlabel{def:k-region-equiv}{{5.6}{101}{$k$-Drift region equivalence $\cong _M^k$}{definition.328}{}}
+\newlabel{def:k-region-equiv@cref}{{[definition][6][]5.6}{[1][101][]101}}
+\@writefile{loe}{\contentsline {lemma}{\numberline {5.7}Lemma\thmtformatoptarg {Finiteness of $\cong  _M^k$}}{102}{lemma.336}\protected@file@percent }
+\newlabel{lem:finite-regions}{{5.7}{102}{Finiteness of $\cong _M^k$}{lemma.336}{}}
+\newlabel{lem:finite-regions@cref}{{[lemma][7][]5.7}{[1][102][]102}}
+\citation{AlurDill94}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3.2}The $k$-Region Automaton}{103}{subsection.337}\protected@file@percent }
+\newlabel{sec:k-automaton}{{5.3.2}{103}{The $k$-Region Automaton}{subsection.337}{}}
+\newlabel{sec:k-automaton@cref}{{[subsection][2][5,3]5.3.2}{[1][102][]103}}
+\@writefile{loe}{\contentsline {definition}{\numberline {5.8}Definition\thmtformatoptarg {$k$-Region automaton}}{103}{definition.339}\protected@file@percent }
+\@writefile{loe}{\contentsline {theorem}{\numberline {5.9}Theorem\thmtformatoptarg {Soundness and completeness of $\mathcal  {R}_k(\mathcal  {N})$}}{103}{theorem.341}\protected@file@percent }
+\newlabel{thm:region-automaton-correct}{{5.9}{103}{Soundness and completeness of $\mathcal {R}_k(\Nn )$}{theorem.341}{}}
+\newlabel{thm:region-automaton-correct@cref}{{[theorem][9][5]5.9}{[1][103][]103}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3.3}Decidability and Complexity}{103}{subsection.342}\protected@file@percent }
+\newlabel{sec:drift-complexity}{{5.3.3}{103}{Decidability and Complexity}{subsection.342}{}}
+\newlabel{sec:drift-complexity@cref}{{[subsection][3][5,3]5.3.3}{[1][103][]103}}
+\@writefile{loe}{\contentsline {theorem}{\numberline {5.10}Theorem\thmtformatoptarg {Main result for drift-bounded LTNs}}{103}{theorem.344}\protected@file@percent }
+\newlabel{thm:drift-pspace}{{5.10}{103}{Main result for drift-bounded LTNs}{theorem.344}{}}
+\newlabel{thm:drift-pspace@cref}{{[theorem][10][5]5.10}{[1][103][]103}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.4}Deciding Drift Boundedness}{104}{section.345}\protected@file@percent }
+\newlabel{sec:drift-meta}{{5.4}{104}{Deciding Drift Boundedness}{section.345}{}}
+\newlabel{sec:drift-meta@cref}{{[section][4][5]5.4}{[1][104][]104}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.4.1}Universal $k$-Drift Boundedness (Fixed $k$)}{104}{subsection.350}\protected@file@percent }
+\@writefile{loe}{\contentsline {proposition}{\numberline {5.11}Proposition\thmtformatoptarg {Deciding universal $k$-boundedness}}{104}{proposition.352}\protected@file@percent }
+\newlabel{prop:universal-k-decidable}{{5.11}{104}{Deciding universal $k$-boundedness}{proposition.352}{}}
+\newlabel{prop:universal-k-decidable@cref}{{[proposition][11][]5.11}{[1][104][]104}}
+\citation{Minsky67}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.4.2}Universal Drift Boundedness (Existence of $k$)}{105}{subsection.353}\protected@file@percent }
+\@writefile{loe}{\contentsline {proposition}{\numberline {5.12}Proposition\thmtformatoptarg {Undecidability of universal boundedness}}{105}{proposition.355}\protected@file@percent }
+\newlabel{prop:universal-undecidable}{{5.12}{105}{Undecidability of universal boundedness}{proposition.355}{}}
+\newlabel{prop:universal-undecidable@cref}{{[proposition][12][]5.12}{[1][104][]105}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.5}Acyclic Local-Timed Negotiations}{105}{section.356}\protected@file@percent }
+\newlabel{sec:acyclic}{{5.5}{105}{Acyclic Local-Timed Negotiations}{section.356}{}}
+\newlabel{sec:acyclic@cref}{{[section][5][5]5.5}{[1][105][]105}}
+\@writefile{loe}{\contentsline {definition}{\numberline {5.13}Definition\thmtformatoptarg {Acyclic LTN}}{105}{definition.358}\protected@file@percent }
+\newlabel{def:acyclic-ltn}{{5.13}{105}{Acyclic LTN}{definition.358}{}}
+\newlabel{def:acyclic-ltn@cref}{{[definition][13][]5.13}{[1][105][]105}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.5.1}Acyclicity Implies Drift Boundedness}{105}{subsection.359}\protected@file@percent }
+\@writefile{loe}{\contentsline {theorem}{\numberline {5.14}Theorem\thmtformatoptarg {Acyclic LTNs are drift bounded}}{105}{theorem.361}\protected@file@percent }
+\newlabel{thm:acyclic-drift-bounded}{{5.14}{105}{Acyclic LTNs are drift bounded}{theorem.361}{}}
+\newlabel{thm:acyclic-drift-bounded@cref}{{[theorem][14][5]5.14}{[1][105][]105}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.5.2}NP-Completeness of Reachability}{106}{subsection.362}\protected@file@percent }
+\@writefile{loe}{\contentsline {theorem}{\numberline {5.15}Theorem\thmtformatoptarg {Reachability for acyclic LTNs}}{107}{theorem.364}\protected@file@percent }
+\newlabel{thm:acyclic-np}{{5.15}{107}{Reachability for acyclic LTNs}{theorem.364}{}}
+\newlabel{thm:acyclic-np@cref}{{[theorem][15][5]5.15}{[1][106][]107}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.3}{\ignorespaces Acyclic LTN encoding SUBSET-SUM. Clock $x$ is reset at every step and enforces a choice of delay 0 or $n_i$; clock $y$ accumulates total elapsed time and is checked at the final node.\relax }}{108}{figure.caption.365}\protected@file@percent }
+\newlabel{fig:subset-sum-ltn}{{5.3}{108}{Acyclic LTN encoding SUBSET-SUM. Clock $x$ is reset at every step and enforces a choice of delay 0 or $n_i$; clock $y$ accumulates total elapsed time and is checked at the final node.\relax }{figure.caption.365}{}}
+\newlabel{fig:subset-sum-ltn@cref}{{[figure][3][5]5.3}{[1][108][]108}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.6}Summary and Perspective}{108}{section.366}\protected@file@percent }
+\newlabel{sec:drift-summary}{{5.6}{108}{Summary and Perspective}{section.366}{}}
+\newlabel{sec:drift-summary@cref}{{[section][6][5]5.6}{[1][108][]108}}
+\@writefile{toc}{\contentsline {paragraph}{Semantic restriction: drift boundedness.}{108}{section.366}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Decidability via region abstraction.}{108}{section.366}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Structural implication: acyclicity.}{109}{section.366}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Meta-complexity.}{109}{section.366}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {5.7}Coming Next: Connected Communication}{110}{section.370}\protected@file@percent }
+\newlabel{sec:drift-next}{{5.7}{110}{Coming Next: Connected Communication}{section.370}{}}
+\newlabel{sec:drift-next@cref}{{[section][7][5]5.7}{[1][110][]110}}
+\citation{DBLP:conf/concur/HerbreteauSW22}
+\@writefile{toc}{\contentsline {chapter}{\numberline {6}Connectedly Communicating LTN}{111}{chapter.371}\protected@file@percent }
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\@writefile{loa}{\addvspace {10\p@ }}
+\@writefile{toc}{\contentsline {section}{\numberline {6.1}Introduction}{111}{section.372}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.1.1}The Connectedly-Communicating Fragment}{111}{subsection.373}\protected@file@percent }
+\citation{DBLP:conf/concur/AlurY99}
+\citation{DBLP:conf/fsttcs/MadhusudanTY05}
+\@writefile{loe}{\addvspace {10\p@ }}
+\@writefile{loe}{\contentsline {theorem}{\numberline {6.1}Theorem\thmtformatoptarg {Informal statement}}{112}{theorem.375}\protected@file@percent }
+\@writefile{loe}{\contentsline {corollary}{\numberline {6.2}Corollary\thmtformatoptarg {Informal statement}}{112}{corollary.377}\protected@file@percent }
+\citation{DBLP:conf/fsttcs/MadhusudanTY05}
+\citation{DBLP:conf/lics/0001HSW22}
+\citation{DBLP:conf/concur/HerbreteauSW22}
+\@writefile{toc}{\contentsline {section}{\numberline {6.2}Understanding Connectedly Communicating LTNs Through Examples}{113}{section.382}\protected@file@percent }
+\newlabel{sec:prelims}{{6.2}{113}{Understanding Connectedly Communicating LTNs Through Examples}{section.382}{}}
+\newlabel{sec:prelims@cref}{{[section][2][6]6.2}{[1][113][]113}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6.1}{\ignorespaces Three variations of LTNs illustrating different synchronization patterns. (a) Connectedly communicating; (b) not connectedly communicating because one synchronizing link is missing; (c) not connectedly communicating because of an isolated local loop, leading to unbounded drift.\relax }}{114}{figure.caption.383}\protected@file@percent }
+\newlabel{fig:three-in-one}{{6.1}{114}{Three variations of LTNs illustrating different synchronization patterns. (a) Connectedly communicating; (b) not connectedly communicating because one synchronizing link is missing; (c) not connectedly communicating because of an isolated local loop, leading to unbounded drift.\relax }{figure.caption.383}{}}
+\newlabel{fig:three-in-one@cref}{{[figure][1][6]6.1}{[1][113][]114}}
+\@writefile{loe}{\contentsline {example}{\numberline {6.2.1}Example}{114}{example.385}\protected@file@percent }
+\newlabel{eg:three-in-one}{{6.2.1}{114}{}{example.385}{}}
+\newlabel{eg:three-in-one@cref}{{[example][1][]6.2.1}{[1][113][]114}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6.2}{\ignorespaces Representative loops in the untimed marking graphs \(\operatorname  {MG}(\mathcal  {N}_{\mathsf  {untime}})\) for the three variants. These loops will be used to extract the communication graphs of Figure\nobreakspace  {}\ref  {fig:comm-graphs} by recording which agents synchronize together along each loop.\relax }}{115}{figure.caption.386}\protected@file@percent }
+\newlabel{fig:marking-graphs}{{6.2}{115}{Representative loops in the untimed marking graphs \(\mg (\nuntime )\) for the three variants. These loops will be used to extract the communication graphs of Figure~\ref {fig:comm-graphs} by recording which agents synchronize together along each loop.\relax }{figure.caption.386}{}}
+\newlabel{fig:marking-graphs@cref}{{[figure][2][6]6.2}{[1][114][]115}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6.3}{\ignorespaces Communication graphs extracted from the loops shown in Figure\nobreakspace  {}\ref  {fig:marking-graphs}. The vertices are the agents, and two agents are connected whenever they participate together in some time-synchronizing node occurring on the corresponding loop.\relax }}{115}{figure.caption.387}\protected@file@percent }
+\newlabel{fig:comm-graphs}{{6.3}{115}{Communication graphs extracted from the loops shown in Figure~\ref {fig:marking-graphs}. The vertices are the agents, and two agents are connected whenever they participate together in some time-synchronizing node occurring on the corresponding loop.\relax }{figure.caption.387}{}}
+\newlabel{fig:comm-graphs@cref}{{[figure][3][6]6.3}{[1][115][]115}}
+\@writefile{toc}{\contentsline {paragraph}{Example (a): connectedly communicating.}{115}{figure.caption.387}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Example (b): a disconnected loop.}{116}{figure.caption.387}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Example (c): an isolated local loop and unbounded drift.}{116}{figure.caption.387}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {6.4}{\ignorespaces A schematic example showing that timing information need not propagate to all agents within a single propagation step. In general, the propagation argument may require up to \(|P|\) iterations; in this example, timing information originating at node \(5\) reaches node \(1\) only after \(2\) iterations, through a chain of intermediate dependencies.\relax }}{117}{figure.caption.388}\protected@file@percent }
+\newlabel{fig:multiple-iterations}{{6.4}{117}{A schematic example showing that timing information need not propagate to all agents within a single propagation step. In general, the propagation argument may require up to \(|P|\) iterations; in this example, timing information originating at node \(5\) reaches node \(1\) only after \(2\) iterations, through a chain of intermediate dependencies.\relax }{figure.caption.388}{}}
+\newlabel{fig:multiple-iterations@cref}{{[figure][4][6]6.4}{[1][116][]117}}
+\@writefile{toc}{\contentsline {paragraph}{Iterated propagation of timing information.}{117}{figure.caption.388}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Takeaway.}{117}{figure.caption.388}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {6.3}Connectedly communicating LTNs}{118}{section.389}\protected@file@percent }
+\newlabel{sec:connected}{{6.3}{118}{Connectedly communicating LTNs}{section.389}{}}
+\newlabel{sec:connected@cref}{{[section][3][6]6.3}{[1][117][]118}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.3.1}Marking Graphs and Communication Graphs}{118}{subsection.390}\protected@file@percent }
+\@writefile{loe}{\contentsline {definition}{\numberline {6.3}Definition\thmtformatoptarg {Connectedly Communicating LTN}}{119}{definition.392}\protected@file@percent }
+\@writefile{loe}{\contentsline {lemma}{\numberline {6.4}Lemma\thmtformatoptarg {Cut property of loop communication graphs}}{120}{lemma.394}\protected@file@percent }
+\newlabel{lem:cc-cut}{{6.4}{120}{Cut property of loop communication graphs}{lemma.394}{}}
+\newlabel{lem:cc-cut@cref}{{[lemma][4][]6.4}{[1][119][]120}}
+\@writefile{loe}{\contentsline {lemma}{\numberline {6.5}Lemma\thmtformatoptarg {Every long enough segment contains a synchronizing contact}}{120}{lemma.398}\protected@file@percent }
+\newlabel{lem:segment-has-sync}{{6.5}{120}{Every long enough segment contains a synchronizing contact}{lemma.398}{}}
+\newlabel{lem:segment-has-sync@cref}{{[lemma][5][]6.5}{[1][120][]120}}
+\@writefile{toc}{\contentsline {section}{\numberline {6.4}Main Theorem}{120}{section.399}\protected@file@percent }
+\@writefile{loe}{\contentsline {theorem}{\numberline {6.6}Theorem}{120}{theorem.401}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.4.1}Proof Roadmap}{121}{subsection.402}\protected@file@percent }
+\@writefile{loe}{\contentsline {lemma}{\numberline {6.7}Lemma\thmtformatoptarg {Saturation lemma}}{122}{lemma.411}\protected@file@percent }
+\newlabel{lem:saturation}{{6.7}{122}{Saturation lemma}{lemma.411}{}}
+\newlabel{lem:saturation@cref}{{[lemma][7][]6.7}{[1][122][]122}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6.5}{\ignorespaces Trace representation of a run from Figure\nobreakspace  {}\ref  {fig:three-in-one}(a). Each agent has its own timeline (horizontal line), events are shown as boxes, and edge labels indicate time delays.\relax }}{123}{figure.caption.413}\protected@file@percent }
+\newlabel{fig:trace}{{6.5}{123}{Trace representation of a run from Figure~\ref {fig:three-in-one}(a). Each agent has its own timeline (horizontal line), events are shown as boxes, and edge labels indicate time delays.\relax }{figure.caption.413}{}}
+\newlabel{fig:trace@cref}{{[figure][5][6]6.5}{[1][123][]123}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.4.2}Trace Representation of a Run}{123}{subsection.412}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Run to trace.}{125}{Item.417}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Trace to run.}{126}{Item.420}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Well-definedness and validity.}{127}{Item.426}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {6.6}{\ignorespaces Tightening a single-agent trace with $M = 10$. Delays larger than $M+1 = 11$ are reduced to exactly $11$.\relax }}{128}{figure.caption.429}\protected@file@percent }
+\newlabel{fig:trace-1}{{6.6}{128}{Tightening a single-agent trace with $M = 10$. Delays larger than $M+1 = 11$ are reduced to exactly $11$.\relax }{figure.caption.429}{}}
+\newlabel{fig:trace-1@cref}{{[figure][6][6]6.6}{[1][128][]128}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.4.3}Tightening a Run}{128}{subsection.427}\protected@file@percent }
+\newlabel{sec:tighten}{{6.4.3}{128}{Tightening a Run}{subsection.427}{}}
+\newlabel{sec:tighten@cref}{{[subsection][3][6,4]6.4.3}{[1][128][]128}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.4.3.1}Intuition Through Examples}{128}{subsubsection.428}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {6.7}{\ignorespaces Two-agent trace with $M = 10$. The synchronization at $s_1$ prevents tightening, even though $p$ has large delays.\relax }}{129}{figure.caption.432}\protected@file@percent }
+\newlabel{fig:trace-2}{{6.7}{129}{Two-agent trace with $M = 10$. The synchronization at $s_1$ prevents tightening, even though $p$ has large delays.\relax }{figure.caption.432}{}}
+\newlabel{fig:trace-2@cref}{{[figure][7][6]6.7}{[1][129][]129}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6.8}{\ignorespaces Above: Trace $\textsf  {Tr}_3$ with $M = 10$. Agent $q$ has less slack than $p$. Below: Tightened trace $\overline  {\textsf  {Tr}}_3$ reduces both by the minimum slack (8 units).\relax }}{130}{figure.caption.433}\protected@file@percent }
+\newlabel{fig:trace-3}{{6.8}{130}{Above: Trace $\tr _3$ with $M = 10$. Agent $q$ has less slack than $p$. Below: Tightened trace $\overline {\tr }_3$ reduces both by the minimum slack (8 units).\relax }{figure.caption.433}{}}
+\newlabel{fig:trace-3@cref}{{[figure][8][6]6.8}{[1][129][]130}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6.9}{\ignorespaces Trace $\textsf  {Tr}_4$ with $M = 10$. Despite slack in $p$ and $q$ before $s_1$, the trace is tight because $r$ has no slack before $s_2$.\relax }}{131}{figure.caption.434}\protected@file@percent }
+\newlabel{fig:trace-4}{{6.9}{131}{Trace $\tr _4$ with $M = 10$. Despite slack in $p$ and $q$ before $s_1$, the trace is tight because $r$ has no slack before $s_2$.\relax }{figure.caption.434}{}}
+\newlabel{fig:trace-4@cref}{{[figure][9][6]6.9}{[1][131][]131}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.4.3.2}The Slack Graph}{132}{subsubsection.435}\protected@file@percent }
+\@writefile{loe}{\contentsline {definition}{\numberline {6.8}Definition\thmtformatoptarg {Slack Graph}}{132}{definition.439}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {6.10}{\ignorespaces Shortest weighted paths to synchronizing events in slack graphs. The red double arrow in $\textsf  {Tr}_4$ is a back edge that makes both $\sigma (s_1)$ and $\sigma (s_2)$ equal to 0.\relax }}{135}{figure.caption.447}\protected@file@percent }
+\newlabel{fig:slack-shortest-paths}{{6.10}{135}{Shortest weighted paths to synchronizing events in slack graphs. The red double arrow in $\tr _4$ is a back edge that makes both $\sigma (s_1)$ and $\sigma (s_2)$ equal to 0.\relax }{figure.caption.447}{}}
+\newlabel{fig:slack-shortest-paths@cref}{{[figure][10][6]6.10}{[1][135][]135}}
+\@writefile{loe}{\contentsline {definition}{\numberline {6.9}Definition\thmtformatoptarg {Tight Traces}}{135}{definition.446}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.4.3.3}Properties of the $\sigma $ Function}{136}{subsubsection.448}\protected@file@percent }
+\@writefile{loe}{\contentsline {lemma}{\numberline {6.10}Lemma\thmtformatoptarg {Monotonicity of $\sigma $}}{136}{lemma.450}\protected@file@percent }
+\newlabel{lem:sigma-monotone}{{6.10}{136}{Monotonicity of $\sigma $}{lemma.450}{}}
+\newlabel{lem:sigma-monotone@cref}{{[lemma][10][]6.10}{[1][136][]136}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.4.3.4}The Tightening Algorithm}{136}{subsubsection.453}\protected@file@percent }
+\@writefile{loe}{\contentsline {lemma}{\numberline {6.11}Lemma\thmtformatoptarg {Tightening Lemma}}{136}{lemma.455}\protected@file@percent }
+\newlabel{lem:tightening}{{6.11}{136}{Tightening Lemma}{lemma.455}{}}
+\newlabel{lem:tightening@cref}{{[lemma][11][]6.11}{[1][136][]136}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.4.3.5}Bounding Tight Traces}{138}{subsubsection.462}\protected@file@percent }
+\@writefile{loe}{\contentsline {lemma}{\numberline {6.12}Lemma\thmtformatoptarg {Tight Trace Bound}}{138}{lemma.464}\protected@file@percent }
+\newlabel{lem:tight-run-bound}{{6.12}{138}{Tight Trace Bound}{lemma.464}{}}
+\newlabel{lem:tight-run-bound@cref}{{[lemma][12][]6.12}{[1][138][]138}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.4.4}Tight Runs of Connectedly-Communicating LTNs are Drift-Bounded}{139}{subsection.465}\protected@file@percent }
+\newlabel{sec:cc-ltn-bounded}{{6.4.4}{139}{Tight Runs of Connectedly-Communicating LTNs are Drift-Bounded}{subsection.465}{}}
+\newlabel{sec:cc-ltn-bounded@cref}{{[subsection][4][6,4]6.4.4}{[1][139][]139}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.4.4.1}Proof Strategy}{140}{subsubsection.468}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.4.4.2}Setting Up: Chunking the Run}{140}{subsubsection.472}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.4.4.3}Trace Notation}{141}{subsubsection.473}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.4.4.4}Key Technical Claims}{141}{subsubsection.474}\protected@file@percent }
+\@writefile{loe}{\contentsline {claim}{\numberline {6.13}Claim\thmtformatoptarg {Forward Connectivity}}{141}{claim.476}\protected@file@percent }
+\newlabel{claim:forward}{{6.13}{141}{Forward Connectivity}{claim.476}{}}
+\newlabel{claim:forward@cref}{{[claim][13][]6.13}{[1][141][]141}}
+\@writefile{loe}{\contentsline {claim}{\numberline {6.14}Claim\thmtformatoptarg {Backward Connectivity}}{142}{claim.478}\protected@file@percent }
+\newlabel{claim:backward}{{6.14}{142}{Backward Connectivity}{claim.478}{}}
+\newlabel{claim:backward@cref}{{[claim][14][]6.14}{[1][142][]142}}
+\@writefile{loe}{\contentsline {claim}{\numberline {6.15}Claim\thmtformatoptarg {Minimum Time Propagation}}{142}{claim.480}\protected@file@percent }
+\newlabel{claim:min-propagation}{{6.15}{142}{Minimum Time Propagation}{claim.480}{}}
+\newlabel{claim:min-propagation@cref}{{[claim][15][]6.15}{[1][142][]142}}
+\@writefile{loe}{\contentsline {claim}{\numberline {6.16}Claim\thmtformatoptarg {Within-Chunk Bound}}{143}{claim.482}\protected@file@percent }
+\newlabel{claim:within-chunk}{{6.16}{143}{Within-Chunk Bound}{claim.482}{}}
+\newlabel{claim:within-chunk@cref}{{[claim][16][]6.16}{[1][143][]143}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.4.4.5}Putting It All Together}{144}{subsubsection.489}\protected@file@percent }
+\citation{DBLP:conf/fsttcs/MadhusudanTY05}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.4.5}Extensions and Variations}{145}{subsection.490}\protected@file@percent }
+\newlabel{sec:weaker-connected-comm}{{6.4.5}{145}{Extensions and Variations}{subsection.490}{}}
+\newlabel{sec:weaker-connected-comm@cref}{{[subsection][5][6,4]6.4.5}{[1][145][]145}}
+\@writefile{toc}{\contentsline {paragraph}{Synchronization classes as a monotone partition.}{146}{subsection.490}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Weak connected communication.}{146}{subsection.490}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {6.11}{\ignorespaces Three synchronized chains illustrating independent actions a, b, c on timelines p, q, r. The action 'a' features a time-disconnected recursive loop, leading to unbounded local time accumulation for agent r.\relax }}{147}{figure.caption.493}\protected@file@percent }
+\newlabel{fig:synchronized-chains}{{6.11}{147}{Three synchronized chains illustrating independent actions a, b, c on timelines p, q, r. The action 'a' features a time-disconnected recursive loop, leading to unbounded local time accumulation for agent r.\relax }{figure.caption.493}{}}
+\newlabel{fig:synchronized-chains@cref}{{[figure][11][6]6.11}{[1][146][]147}}
+\@writefile{loe}{\contentsline {definition}{\numberline {6.17}Definition\thmtformatoptarg {Weakly connectedly-communicating LTN}}{147}{definition.492}\protected@file@percent }
+\newlabel{def:weak-cc}{{6.17}{147}{Weakly connectedly-communicating LTN}{definition.492}{}}
+\newlabel{def:weak-cc@cref}{{[definition][17][]6.17}{[1][146][]147}}
+\@writefile{toc}{\contentsline {paragraph}{Blockwise drift-boundedness.}{147}{figure.caption.493}\protected@file@percent }
+\@writefile{loe}{\contentsline {definition}{\numberline {6.18}Definition\thmtformatoptarg {Blockwise drift bound}}{147}{definition.495}\protected@file@percent }
+\newlabel{def:blockwise-drift}{{6.18}{147}{Blockwise drift bound}{definition.495}{}}
+\newlabel{def:blockwise-drift@cref}{{[definition][18][]6.18}{[1][147][]147}}
+\@writefile{toc}{\contentsline {paragraph}{Why the proof technique still applies.}{147}{definition.495}\protected@file@percent }
+\@writefile{loe}{\contentsline {theorem}{\numberline {6.19}Theorem\thmtformatoptarg {Weak connected communication implies blockwise bounded drift}}{148}{theorem.497}\protected@file@percent }
+\newlabel{thm:weak-cc-blockwise}{{6.19}{148}{Weak connected communication implies blockwise bounded drift}{theorem.497}{}}
+\newlabel{thm:weak-cc-blockwise@cref}{{[theorem][19][6]6.19}{[1][148][]148}}
+\@writefile{toc}{\contentsline {paragraph}{Algorithmic and modelling consequences.}{148}{theorem.497}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {6.5}Conclusion}{148}{section.498}\protected@file@percent }
+\newlabel{sec:conclusion}{{6.5}{148}{Conclusion}{section.498}{}}
+\newlabel{sec:conclusion@cref}{{[section][5][6]6.5}{[1][148][]148}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.5.1}Summary of Contributions}{149}{subsection.499}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.5.2}Future Directions}{149}{subsection.503}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.5.3}Closing Remarks}{150}{subsection.507}\protected@file@percent }
+\@writefile{toc}{\contentsline {chapter}{\numberline {7}Conclusion and Future Directions}{151}{chapter.508}\protected@file@percent }
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\@writefile{loa}{\addvspace {10\p@ }}
+\newlabel{chap:conclusion}{{7}{151}{Conclusion and Future Directions}{chapter.508}{}}
+\newlabel{chap:conclusion@cref}{{[chapter][7][]7}{[1][151][]151}}
+\@writefile{toc}{\contentsline {section}{\numberline {7.1}Conclusion}{151}{section.509}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Foundations.}{151}{section.509}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Extreme synchronization regimes.}{152}{section.509}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Bounded desynchronization.}{152}{section.509}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Structural coherence.}{152}{section.509}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {7.2}Broader Directions and Outlook}{153}{section.513}\protected@file@percent }
+\newlabel{sec:future-directions}{{7.2}{153}{Broader Directions and Outlook}{section.513}{}}
+\newlabel{sec:future-directions@cref}{{[section][2][7]7.2}{[1][153][]153}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.2.1}Counting and Enumeration Problems}{153}{subsection.514}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.2.2}Quantitative Extensions: Costs, Weights, and Counters}{154}{subsection.515}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.2.3}Structural Parameters and Well-Structuredness}{154}{subsection.516}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.2.4}Beyond Reachability: Broader Verification and Synthesis}{155}{subsection.517}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.2.5}Connections to Other Infinite-State Models}{156}{subsection.518}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.2.6}Toward Practical Modeling and Tool Support}{156}{subsection.519}\protected@file@percent }
+\bibdata{references}
+\bibstyle{alpha}
